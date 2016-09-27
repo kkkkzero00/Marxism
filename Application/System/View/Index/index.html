@@ -1,0 +1,236 @@
+<extend name="Common@HyFrame:frameset" />
+<block name="title">HyFrame数据管理框架&nbsp;<small>简洁、流畅、安全、自适应移动设备</small></block>
+<block name="breadcrumb">
+<ul class="page-breadcrumb">
+	<li><i class="fa fa-home"></i> <a href="__ROOT__">首页</a> <i class="fa fa-angle-right"></i></li>
+	<li><a href="javascript:;">欢迎中心</a></li>
+</ul>
+</block>
+<block name="toolbar"></block>
+<block name="main">
+<!-- BEGIN DASHBOARD STATS -->
+<div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <a class="dashboard-stat dashboard-stat-light blue-soft" href="javascript:;">
+        <div class="visual">
+            <i class="fa fa-comments"></i>
+        </div>
+        <div class="details">
+            <div class="number">
+                 1349
+            </div>
+            <div class="desc">
+                 新的留言
+            </div>
+        </div>
+        </a>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <a class="dashboard-stat dashboard-stat-light red-soft" href="javascript:;">
+        <div class="visual">
+            <i class="fa fa-trophy"></i>
+        </div>
+        <div class="details">
+            <div class="number">
+                 12.5w
+            </div>
+            <div class="desc">
+                 总利润
+            </div>
+        </div>
+        </a>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <a class="dashboard-stat dashboard-stat-light green-soft" href="javascript:;">
+        <div class="visual">
+            <i class="fa fa-shopping-cart"></i>
+        </div>
+        <div class="details">
+            <div class="number">
+                 549
+            </div>
+            <div class="desc">
+                 新的订单
+            </div>
+        </div>
+        </a>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <a class="dashboard-stat dashboard-stat-light purple-soft" href="javascript:;">
+        <div class="visual">
+            <i class="fa fa-globe"></i>
+        </div>
+        <div class="details">
+            <div class="number">
+                 +89%
+            </div>
+            <div class="desc">
+                 销售增长率
+            </div>
+        </div>
+        </a>
+    </div>
+</div>
+<!-- END DASHBOARD STATS -->
+<div class="clearfix">
+</div>
+<div class="row">
+    <div class="col-md-6 col-sm-6">
+        <!-- BEGIN PORTLET-->
+        <div class="portlet light ">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class="icon-bar-chart font-green-sharp"></i> <span  class="caption-subject font-green-sharp bold">欢迎中心</span>
+                </div>
+                <div class="tools">
+                    <a href="javascript:;" class="collapse" data-original-title="" title="收缩/展开">
+                    </a>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <p class="pull-left time-now"></p>
+                <div class="pull-right hidden-480">
+                <iframe name="weather_inc" src="http://tianqi.xixik.com/cframe/10" width="300" height="25" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe>
+                </div>
+                <div class="clearfix"></div>
+                <br>
+                <p>上次登录时间：{$lastLogin}<i class="pull-right"><a href="{:U('User/profile/#tab-2-3')}">账号异常？立刻修改密码</a></i></p>
+                <br>
+                <p>您当前有<a href="{:U('HyAlert/all')}"> {:count($hyAlerts)} 条新的提醒</a> ， <a href="{:U('Inbox/all')}">0 封未读邮件</a>，请注意查收！</p>
+                <br>
+                <p>当前默认角色：{$role}</p>
+                <notempty name="roles">
+                    <p> 我可以切换的角色有：<b>
+                    <volist name="roles" id="v">
+                       <eq name="v" value="$role"><else />&nbsp;{$v}&nbsp;</eq>
+                    </volist></b>
+                                                    。请单击右上角头像，切换其他角色。
+                    </p>
+                </notempty>
+                <br>
+            </div>
+        </div>
+        <!-- END PORTLET-->
+</div>
+<div class="col-md-6 col-sm-6">
+       <!-- BEGIN PORTLET-->
+       <div class="portlet light notice">
+           <div class="portlet-title">
+               <div class="caption">
+                   <i class="icon-pin font-red-sunglo"></i>
+                   <span class="caption-subject font-red-sunglo bold">系统公告</span>
+               </div>
+               <div class="tools">
+                   <a href="javascript:;" class="collapse" data-original-title="收缩" title="收缩/展开">
+                   </a>
+                   <a href="javascript:;" class="reload" data-original-title="" title="刷新">
+                   </a>
+                   <a href="javascript:;" class="fullscreen" data-original-title="" title="全屏">
+                   </a>
+               </div>
+               <div class="actions margin-right-10">
+                   <a href="{:U('HyNotice/all')}" class="btn btn-circle btn-default btn-sm">
+                       <i class="fa fa-list-alt"></i> 全部
+                   </a>
+               </div>
+           </div>
+           <div class="portlet-body">
+               <div class="panel-group accordion" id="accordion1">
+                   <volist name="notice" key="k" id="v">
+                       <php>$isOpen=(1===$k)?'in':'collapse';$isOpen0=(1===$k)?'':'collapsed';</php>
+                       <div class="panel panel-default">
+                           <div class="panel-heading">
+                               <h4 class="panel-title">
+                                   <a class="row accordion-toggle accordion-toggle-styled notice-title {$isOpen0}" title="{$v['title']}" data-toggle="collapse" data-parent="#accordion1" href="#collapse_1_{$k}">
+                                       <div class="col-xs-10">
+                                           {$v['title']}
+                                       </div>
+                                       <div class="col-xs-2">
+                                           <notempty name="v['file_id']"><button class="btn btn-circle btn-default btn-xs pull-right-xs notice-file-down" data-url="{:(file_down_url($v['file_id']))}" title="下载附件"><i class="fa fa-paperclip fa-fw"></i></button></notempty>
+                                       </div>
+                                   </a>
+                               </h4>
+                           </div>
+                           <div id="collapse_1_{$k}" class="panel-collapse {$isOpen}">
+                               <div class="panel-body">
+                                   <div class="scroller" style="height:100px">
+                                       {$v['content']}
+                                       <empty name="v['content']">
+                                           <div class="empty">无</div>
+                                       </empty>
+                                   </div>  
+                               </div>
+                           </div>
+                       </div>
+                   </volist>
+               </div>
+           </div>
+       </div>
+       <!-- END PORTLET-->
+    </div>
+</div>
+<div class="clearfix">
+</div>
+<div class="row">
+    <div class="col-md-6 col-sm-6">
+        <!-- BEGIN PORTLET-->
+        <div class="portlet light chats">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class="icon-bubbles font-blue-steel"></i> <span
+                        class="caption-subject font-blue-steel bold uppercase">交流天地</span>
+                        <span class="caption-helper">系统内的用户可在此交流发言...</span>
+                </div>
+                <div class="tools">
+                    <a href="javascript:;" class="collapse" data-original-title="收缩" title="收缩/展开">
+                    </a>
+                    <a href="javascript:;" class="reload" data-original-title="" title="刷新">
+                    </a>
+                    <a href="javascript:;" class="fullscreen" data-original-title="" title="全屏">
+                    </a>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <div class="chat-scroller-wrapper">
+                    <div class="chat-scroller">
+                        <ul class="chat-list">
+                        <!-- 聊天列表 -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="chat-form">
+                    <div class="input-cont">
+                        <input class="form-control" type="text"
+                            placeholder="写点什么..." name="input-chat" />
+                    </div>
+                    <div class="btn-cont">
+                        <span class="arrow"></span>
+                        <button type="submit" class="btn blue icn-only btn-chat"> <i
+                            class="fa fa-check icon-white"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END PORTLET-->
+</div>
+<div class="col-md-6 col-sm-6">
+    <div class="portlet light tasks-widget">
+        <div class="portlet-title">
+            <div class="caption">
+                <i class="icon-share font-green-haze"></i>
+                <span class="caption-subject font-green-haze bold uppercase">其他版块</span>
+                <span class="caption-helper">根据自己的业务需要...</span>
+            </div>
+        </div>
+        <div class="portlet-body">
+        </div>
+    </div>
+</div>
+</block>
+<block name="bottom">
+<script>
+$(document).ready(function(){
+	Index.init();
+});
+</script>
+</block>
