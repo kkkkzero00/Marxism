@@ -13,7 +13,7 @@ class HomkaiServiceModel{
 	 * @return array
 	 */
 	public static function getClassOptg($clsArr){
-		$where = array('college_id'=>ss_clgid(), 'status'=>1);
+		$where = array('status'=>1);
 		if(isset($clsArr)) $where['id']=array('in', $clsArr);
 		$arr = M('class')->where($where)->order('grade asc')->getField('id,name,grade');
 		$data = array();

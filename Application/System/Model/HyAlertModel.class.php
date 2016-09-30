@@ -39,7 +39,7 @@ class HyAlertModel extends HyAllModel{
 	 */
 	protected function initSqlOptions(){
 		return array (
-				'associate'=>array('user|creator_id|id||`college_id`='.ss_clgid()),
+				'associate'=>array('user|creator_id|id|'),
 				'where' => array (
 						'_string'=> "to_users LIKE '%,".ss_uid().",%'",
 						'status'=> 1
@@ -58,6 +58,7 @@ class HyAlertModel extends HyAllModel{
 								'title'=>'标记为已读'
 						)
 				),
+                'okRefresh'	=>	true,
 				'buttons'=>false,
 				'initJS'=>'HyAlert'
 		);
@@ -199,7 +200,7 @@ class HyAlertModel extends HyAllModel{
 						'style'=>'yellow',
 						'cols'=>'0,12',
 						'value'=>array(
-								''=>$arr['url'] ? '<a href="'.U($arr['url']).'">'.$arr['message'].'</a>' : $arr['message'],
+								''=> $arr['message'],
 						)
 				), 
 				'table3'=>array(
@@ -240,11 +241,11 @@ class HyAlertModel extends HyAllModel{
 	 * @param unknown $pkArr
 	 * @return boolean
 	 */
-	protected function setRead($pkArr){
-		$userId = ss_uid();
-		return !!$this->where(array('status'=>1, 'id'=>array('in', $pkArr), '_string'=>"to_users LIKE '%,{$userId},%' AND ( IFNULL(`read_users`,'')='' OR `read_users` NOT LIKE '%,{$userId},%' )"))
-			->save(array('read_users'=>array('exp', "CONCAT(IF(IFNULL(`read_users`,'')='',',',`read_users`),'{$userId},')")));
-	}
+    protected function setRead($pkArr){
+        $userId = ss_uid();
+        return !!$this->where(array('status'=>1, 'id'=>array('in', $pkArr), '_string'=>"to_users LIKE '%,{$userId},%' AND ( IFNULL(`read_users`,'')='' OR `read_users` NOT LIKE '%,{$userId},%' )"))
+            ->save(array('read_users'=>array('exp', "CONCAT(IF(IFNULL(`read_users`,'')='',',',`read_users`),'{$userId},')")));
+    }
 	/**
 	 * 系统通知接口
 	 * @param string $category 提醒的类别，不超过6个字，简要分类

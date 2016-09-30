@@ -37,6 +37,9 @@ Login page
 .hy-page-login .content label {
   color: #fff;
 }
+.login-form{
+    padding:100px;
+}
 .hy-page-login .content .login-form,
 .hy-page-login .content .forget-form {
   padding: 0px;
@@ -142,3 +145,4 @@ Login page
     padding-bottom:100px;
   }
 }
+

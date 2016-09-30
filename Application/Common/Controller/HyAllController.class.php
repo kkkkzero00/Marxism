@@ -32,10 +32,9 @@ abstract class HyAllController extends HyFrameController {
 		if(!method_exists($this->model, 'getInfo')){
 			E('HyFrame Error: '.CONTROLLER_NAME.'模型定义异常！');
 		}
-		$info = $this->model->getInfo();
-		$this->setPageTitle($this->model->getInfo('_title'));
-		$this->jsonAssign('jsonBreadcrumb', $this->model->getBreadcrumb());
-		$this->jsonAssign('jsonAll', $this->model->all());
+		$this->setPageTitle($this->model->getInfo('_title'));	//设置页面标题
+		$this->jsonAssign('jsonBreadcrumb', $this->model->getBreadcrumb());	//面包屑，可以自定义
+		$this->jsonAssign('jsonAll', $this->model->all());		//管理页基础信息输出
 		if(method_exists($this->model, 'all_middle')){
 			$this->_mid = $this->model->all_middle();
 			$ctrl = $this->model->getPageOptions('allMiddle') ?: CONTROLLER_NAME;
@@ -46,9 +45,9 @@ abstract class HyAllController extends HyFrameController {
 			$ctrl = $this->model->getPageOptions('allBottom') ?: CONTROLLER_NAME;
 			$this->_bottom = $this->fetch(T($ctrl.'/all_bottom'));
 		}
-		$js = $this->model->getPageOptions('initJS');
+		$js = $this->model->getPageOptions('initJS');	//检查是否配置需要初始化的js文件
 		if(is_string($js)) $js = explode(',', $js);
-		$this->initJS = $js;
+		$this->initJS = $js;	//相当于 assign('initJS',$js)
 		$this->display('Common@HyFrame/all');
 	}
 	

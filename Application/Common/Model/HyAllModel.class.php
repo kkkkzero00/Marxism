@@ -8,6 +8,8 @@ use Think\Hook;
  * 管理页列表显示、检索、删除、新增、编辑、详情弹窗等
  * 
  * @author Homkai
+ * @since 2014-9-25
+ * @version 2015-5-5 20:21:28
  */
 abstract class HyAllModel  extends HyFrameModel{
 	
@@ -28,7 +30,8 @@ abstract class HyAllModel  extends HyFrameModel{
 	 */
 	protected $infoOptions = array(
 			'title'		=>	'',
-			'subtitle'	=>	''
+			'subtitle'	=>	'',
+			'pagetitle' => ''	//自定义页面标题，非必须
 	);
 	
 	/**
@@ -61,11 +64,11 @@ abstract class HyAllModel  extends HyFrameModel{
 	 * 			 列表字段显示名称：
 	 * 			'title'		=>	''
 	 * 			 隐藏字段：
-	 * 			'hidden'	=>	false
+	 * 			'hidden'	=>	boolean
 	 * 			 排序（为false则关闭排序，字符串为自定义排序，如排序字典）：
-	 * 			'order'		=>	true
+	 * 			'order'		=>	boolean
 	 * 			 字段值回调方法：
-	 * 			'callback'	=>	[]
+	 * 			'callback'	=>	''
 	 * 			 宽度：
 	 * 			'width'		=>	''
 	 * 			 样式：
@@ -200,7 +203,9 @@ abstract class HyAllModel  extends HyFrameModel{
 	 *		 详情模板 ：
 	 *		'detailTpl'	=>	'Common@HyFrame/detail',
 	 *		 编辑数据时重新发送pageOptions ：
-	 *		'editFields'	=>	false
+	 *		'editFields'	=>	false,
+	 *		需要初始化的js文件,支持字符串形式","分隔,也支持数组形式
+	 *		'initJS'	=>	''
 	 * 	]
 	 *
 	 * @var array
@@ -420,9 +425,11 @@ abstract class HyAllModel  extends HyFrameModel{
 			if(!$v['title'] && !$v['list']['title']) $v['list']['hidden']=true;
 			if(!$v['title'] && !$v['form']['title']) unset($v['form']);
 			// 准备选项
-			if('select'==$v['list']['search']['type'] && !$v['list']['search']['options'])
+			if('select'==$v['list']['search']['type'] && !isset($v['list']['search']['options'])){		//下拉的检索
 				$v['list']['search']['options']= $select = call_user_func(array(&$this, "getOptions_$k"));
-			if('select'==$v['form']['type'] && !isset($v['form']['options'])){
+			}
+				
+			if('select'==$v['form']['type'] && !isset($v['form']['options'])){					//新增中的下拉的表单
 				$v['form']['options']= $select ?: (method_exists($this, "getOptions_$k") ? call_user_func(array(&$this, "getOptions_$k")) : array());
 			}
 			// 安全过滤
@@ -430,6 +437,7 @@ abstract class HyAllModel  extends HyFrameModel{
 			unset($v['list']['order'], $v['list']['callback'], $v['form']['callback'], $v['form']['validate']['server'], $v['list']['search']['sql'], $v['form']['fill']);
 			$v=array_merge(array('title'=>'', 'list'=>array('search'=>false), 'form'=>false), $v);
 		}
+
 		return $this->fieldsOptions;
 	}
 	/**
@@ -578,7 +586,7 @@ abstract class HyAllModel  extends HyFrameModel{
 		$data = array();
 		if($total) $data = $this->scope('lists')->order($this->pageOptions['order'])->limit($this->pageOptions['limit'])->select();
 		//=============<Debug begin>===========
-// 		$records['sql'] = $this->_sql();
+ //		$records['sql'] =$this->_sql();
 // 		$records['select'] = $data;
 // 		$records['model'] = $this;
 		//=============<Debug end>=============
@@ -658,7 +666,9 @@ abstract class HyAllModel  extends HyFrameModel{
 		$this->getFieldsToValidate($type);
 		$this->_validate = $this->autoValidateRules($type, $data);
 		$this->autoFill($type, $data);
-		/* dump($this->insertFields);
+		
+		/* 
+		dump($this->insertFields);
 		dump($this->_validate);
 		dump($this->_auto);
 		dump($data);
@@ -908,6 +918,7 @@ abstract class HyAllModel  extends HyFrameModel{
 	 * 自定义面包屑
 	 */ 
 	public function getBreadcrumb(){
+		
 		return $this->breadcrumb[ACTION_NAME] ?: false;
 	}
 	/**

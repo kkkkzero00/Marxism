@@ -61,7 +61,7 @@ class HyAuthModel extends HyFrameModel {
 		$pass = false;
 		$model = null;
 		$auth = S('authCache_'.session('roles'));
-// 		dump($auth);
+		//dump($auth);
 		$key = MODULE_NAME.'/'.CONTROLLER_NAME.'/'.ACTION_NAME;
 		if(!$_auth = $auth[$key]) return array('status'=>false, 'info'=>'权限验证失败：当前操作无权访问！');
 		$get = I('get.');

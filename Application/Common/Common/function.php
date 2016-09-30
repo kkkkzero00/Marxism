@@ -4,8 +4,9 @@
  * @return number
  */
 function ss_uid(){
-	return session('userId');
+    return session('userId');
 }
+
 /**
  * 用户所属学院id
  * @return number

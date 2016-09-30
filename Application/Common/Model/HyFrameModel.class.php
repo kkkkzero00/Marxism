@@ -85,6 +85,7 @@ abstract class HyFrameModel extends Model {
         $this->_initialize();
 		if(!empty($name)) {
 			if(strpos($name,'.')) {
+				/*list把数组中的值赋给$this->dbName, $this->name这两个变量*/
 				list($this->dbName, $this->name) = explode('.', $name);
 			} else {
 				$this->name   =  $name;

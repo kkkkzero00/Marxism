@@ -42,7 +42,7 @@ class HyFileModel extends HyFrameModel{
 		$setting['removeTrash'] = array($this, 'removeTrash');
         $Upload = new Upload($setting, $driver, $config);
         $info   = $Upload->upload($files);
-// dump($info);
+        // dump($info);
         /* 设置文件保存位置 */
 		$this->_auto[] = array('location', 'local' === strtolower($driver) ? 0 : 1, self::MODEL_INSERT);
 

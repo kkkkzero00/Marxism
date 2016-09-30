@@ -59,7 +59,7 @@
 			<label class="control-label visible-ie8 visible-ie9">用户名</label>
 			<div class="input-icon">
 				<i class="fa fa-user"></i>
-				<input class="form-control" type="text" autocomplete="off" placeholder="您的学号或者工号" name="hy_username"/>
+				<input class="form-control" type="text" autocomplete="off" placeholder="您的账号" name="hy_username"/>
 			</div>
 		</div>
 		<div class="form-group">
@@ -133,7 +133,7 @@
 <!-- END LOGIN -->
 <!-- BEGIN COPYRIGHT -->
 <div class="copyright">
-	 2014-2015 &copy; 江西师范大学计算机信息工程学院 <span class="visible-xs-inline"><br></span>宏奕工作室（Homyit Studio）
+	 2015 &copy; 江西师范大学计算机信息工程学院 <span class="visible-xs-inline"><br></span>宏奕工作室（Homyit Studio）
 </div>
 <!-- END COPYRIGHT -->
 <!-- BEGIN JAVASCRIPTS -->

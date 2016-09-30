@@ -97,6 +97,7 @@ var Login = function () {
 	            	return false;
 	            }
 	        });
+		
 	        $('.login-form input').keypress(function (e) {
 	            if (e.which == 13) {
 	                if ($('.login-form').validate().form()) {

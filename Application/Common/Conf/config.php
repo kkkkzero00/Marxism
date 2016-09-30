@@ -5,17 +5,22 @@ return array_merge( $db = array(
 		// 数据库类型：
 		'DB_TYPE'   			=>	'mysql',  
 		// 数据库地址：
-		'DB_HOST'				=>	'localhost',
+		'DB_HOST'				=>	'127.0.0.1',
 		// 数据库名：
-		'DB_NAME'				=>	'homyit_hyframe',
+		'DB_NAME'				=>	'marxism_project',
 		// 用户名：
 		'DB_USER'   			=>	'root',
 		// 密码：
-		'DB_PWD'    			=>	'', 
+		'DB_PWD'    			=>	'',
 		// 数据库表前缀： 
-		'DB_PREFIX' 			=>	'homyit_', 
+		'DB_PREFIX' 			=>	'mar_', 
 		// 数据库编码：
 		'DB_CHARSET'			=>	'utf8',
+
+        //备份数据库配置
+        'DB_COPY_PREFIX'        =>  'edu_',
+        'DB_COPY_NAME'          =>  'jxnu_sis_copy',
+        'DB_COPY_CONFIG'        =>  'mysql://homyit:homyit_dev@127.0.0.1/jxnu_sis_copy#utf8'
 		
 ), array(
 		
@@ -31,15 +36,16 @@ return array_merge( $db = array(
 		'SESSION_TYPE'          =>  'DB',
 		'SESSION_TABLE'			=>	$db['DB_PREFIX'].'frame_session',
 		// 会话保持在线时长（秒）：
-		'SESSION_ONLINE'		=>	15,
+		'SESSION_ONLINE'		=>	60*30,
 		// SESSION配置，一般无需修改：
-		'SESSION_OPTIONS'		=>  array('expire'=>60*15, 'name'=>'HyFrame_SSID', 'path'=>RUNTIME_PATH.'Temp/'),
+		'SESSION_OPTIONS'		=>  array('expire'=>60*30, 'name'=>'HyFrame_SSID', 'path'=>RUNTIME_PATH.'Temp/'),
 		
 	// CACHE 配置
 		// 缓存方式，可根据自己服务器情况设定：
 		'DATA_CACHE_TYPE'       =>  'File',
 		'DATA_CACHE_PATH'       =>  RUNTIME_PATH.'Temp/Cache',
-		'DATA_CACHE_TIME'       =>  30*60*60,
+		'DATA_CACHE_TIME'       =>  60*60*12,
+		
 		
 	// 文件上传相关配置 
 		'FILE_UPLOAD' => array(

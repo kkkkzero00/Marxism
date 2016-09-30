@@ -6,6 +6,7 @@ var Index = function(){
 		// List容器
 		var $list=$('ul.chat-list');
 		var lastQueryTime = (new Date()).valueOf();
+	//	console.log(lastQueryTime);
 		// 初始化 slim scroll
 		var initScroll = function(){
 			$('.chat-scroller').not('.scroller-initialized').addClass('scroller-initialized').slimScroll({
@@ -44,15 +45,20 @@ var Index = function(){
 				last.type = $last.data('type')=='in' ? true : false;
 				last.user_id_text=$.trim($last.find('.name').text());
 			}
+			//console.log(data.list);
 			$.each(data.list,function(k,v){
+				//console.log(v);
 				var type=false;
 				if(data.list[k-1]) last=data.list[k-1];
+			//	console.log(last);
 				type=(v['user_id_text']==last['user_id_text'])?last.type:!last.type;
 				data.list[k]['type']=type;
 				v._type=type?'in':'out';
+				//console.log(data.list);
 				htList+=tpl.replace(/\{:(\w+)}/g,function(r1,r2){
 					return v[r2] || '';
 				});
+				
 			});
 			$list.data('offset',data.offset).append(htList);
 			if($('.chat-scroller').hasClass('scroller-initialized')){

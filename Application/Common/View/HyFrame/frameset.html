@@ -7,7 +7,15 @@
 <!-- BEGIN HEAD -->
 <head>
 <meta charset="utf-8"/>
-<title><empty name="pageTitle">{:S('SITE_ADMIN_TITLE')}<else />{$_pageTitle} - {:S('SITE_ADMIN_TITLE')}</empty></title>
+
+<title>
+    <empty name="pageTitle">
+        {:S('SITE_ADMIN_TITLE')}
+    <else/>
+        {$_pageTitle} - {:S('SITE_ADMIN_TITLE')}
+    </empty>
+</title>
+
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -22,7 +30,7 @@
 <!-- BEGIN PAGE LEVEL STYLES -->
 <block name="style"></block>
 <foreach name="_assets.GLOBAL.CSS" item="item">
-<link href="_PUBLIC__/assets/global/styles/{$item}" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/assets/global/styles/{$item}" rel="stylesheet" type="text/css"/>
 </foreach>
 <foreach name="_assets.PLUGINS.CSS" item="item">
 <link href="__PUBLIC__/assets/global/plugins/{$item}" rel="stylesheet" type="text/css"/>
@@ -51,7 +59,7 @@
         <!-- BEGIN LOGO -->
         <div class="page-logo">
             <a href="index.html">
-            <img src="__PUBLIC__/assets/layout/img/logo-default.png" alt="logo" class="logo-default"/>
+                <img src="__PUBLIC__/assets/layout/img/logo-default.png" alt="logo" class="logo-default"/>
             </a>
             <div class="menu-toggler sidebar-toggler">
                 <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
@@ -66,14 +74,14 @@
         <div class="page-top">
             <!-- BEGIN HEADER SEARCH BOX -->
             <!-- DOC: Apply "search-form-expanded" right after the "search-form" class to have half expanded search box -->
-            <form class="hy-search-form search-form search-form-expanded" action="extra_search.html" method="GET">
+           <!-- <form class="hy-search-form search-form search-form-expanded" action="extra_search.html" method="GET">
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Search..." name="query">
                     <span class="input-group-btn">
                     <a href="javascript:;" class="btn submit"><i class="icon-magnifier"></i></a>
                     </span>
                 </div>
-            </form>
+            </form>-->
             <!-- END HEADER SEARCH BOX -->
             <!-- BEGIN TOP NAVIGATION MENU -->
             <div class="top-menu">
@@ -95,18 +103,26 @@
                                     <empty name="hyAlerts"><li style="padding:10px;">暂无未读消息！</li></empty>
                                     <volist name="hyAlerts" id="v">
                                     <li>
-                                        <notempty name="v['url']"><a href="{:U($v['url'])}"><else/><a href="javascript:;"></notempty>
-                                            <span class="time">
-                                                {$v.create_time|to_time=5}
-                                            </span>
-                                            <span class="details">
-                                                <php>$arr=explode(',',$v['icon']); $icon=$arr[1];  $label=$arr[0]?:'label-success';</php>
-                                                <span class="label label-sm label-icon {$label}">
-                                                <i class="fa {$icon} fa-fw"></i>
+                                        <notempty name="v['url']">
+                                            <a href="{:U($v['url'])}">
+                                        <else/>
+                                            <a href="javascript:;">
+                                        </notempty>
+                                            
+                                                <span class="time">
+                                                    {$v.create_time|to_time=5}
                                                 </span>
-                                                                                                                            【{$v.category}】{$v.message}                                                                         
-                                            </span>
-                                        </a>
+                                                
+                                                <span class="details">
+                                                    <php>
+                                                        $arr=explode(',',$v['icon']); $icon=$arr[1];  $label=$arr[0]?:'label-success';
+                                                    </php>
+                                                    <span class="label label-sm label-icon {$label}">
+                                                        <i class="fa {$icon} fa-fw"></i>
+                                                    </span>
+                                                    【{$v.category}】{$v.message}
+                                                </span>
+                                            </a>
                                     </li>
                                     </volist>
                                 </ul>
@@ -114,38 +130,7 @@
                         </ul>
                     </li>
                     <!-- END NOTIFICATION DROPDOWN -->
-                    <!-- BEGIN INBOX DROPDOWN -->
-                    <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
-                    <li class="dropdown dropdown-extended dropdown-inbox" id="header_inbox_bar">
-                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                        <i class="icon-envelope-open"></i>
-                        <span class="badge badge-default">
-                        1 </span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="external">
-                                <h3>你有 <span class="bold">1</span> 封未读邮件！</h3>
-                                <a href="page_inbox.html">查看全部</a>
-                            </li>
-                            <li>
-                                <ul class="dropdown-menu-list scroller" style="height: 275px;" data-handle-color="#637283">
-                                    <li>
-                                        <a href="inbox.html?a=view">
-                                        <span class="photo">
-                                            <img src="__PUBLIC__/assets/layout/img/avatar2.jpg" class="img-circle" alt="">
-                                        </span>
-                                        <span class="subject">
-	                                        <span class="from">宏奕</span>
-	                                        <span class="time">刚刚</span>
-                                        </span>
-                                        <span class="message">TODO...  TODO...  TODO...  </span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- END INBOX DROPDOWN -->
+
                     <!-- BEGIN USER LOGIN DROPDOWN -->                    
                     <li class="dropdown dropdown-user">
                         <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">

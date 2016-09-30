@@ -1,5 +1,5 @@
 <?php
-namespace User\Controller;
+namespace Achieve\Controller;
 use Common\Controller\HyAllController;
 
 /**

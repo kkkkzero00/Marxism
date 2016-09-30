@@ -24,6 +24,10 @@ class HyAccountModel extends HyFrameModel{
 	public function login($account){
 		$arr=$this->where(array('user_no'=>$account,'status'=>1))->field(true)->find();
 		if($arr) $arr['password'] = $this->pwdDecrypt($arr['password']);
+        $role_arr = explode(',',$arr['roles']);
+        if(in_array('21',$role_arr)){
+            return false;
+        }
 		return $arr;
 	}
 	/**
@@ -74,7 +78,6 @@ class HyAccountModel extends HyFrameModel{
 				}
 				break;
 		}
-		session('collegeName', M('college')->getFieldById(session('collegeId'), 'name'));
 	}
 	/**
 	 * 忘记密码 发送验证码邮件

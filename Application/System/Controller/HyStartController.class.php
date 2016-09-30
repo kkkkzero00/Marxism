@@ -71,6 +71,7 @@ class HyStartController extends HyFrameController {
 					$logStep .= " >> <span class='text-warning'>密码错误</span>";
 					break;
 				}
+				
 				// 单点登录限制
 				if(C('SINGLE_POINT_ONLINE') && $user['session_id'] && $user['session_id'] != session_id()){
 					$lastTime = M(ltrim(C('SESSION_TABLE'), C('DB_PREFIX')))->getFieldBySession_id($user['session_id'], 'session_expire');
@@ -79,6 +80,7 @@ class HyStartController extends HyFrameController {
 						break;
 					}
 				}
+				
 				$logStep .= " >> <span class='text-success'>成功</span>";
 				$json['info'] = '用户身份验证成功，玩命加载中...';
 				$json['data'] = rand(10000000, 99999999);
@@ -103,6 +105,7 @@ class HyStartController extends HyFrameController {
 				session('roleIdArr', $roleIdArr);
 				$this->roleCache($roleIdArr[0]);
 				$json['status'] = true;
+				
 				break;
 				// 忘记密码 - 发送验证码
 			case 'forgetSendVerify':
