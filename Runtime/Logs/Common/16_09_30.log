@@ -1,0 +1,18 @@
+[ 2016-09-30T12:15:02+08:00 ] 127.0.0.1 /Marxism/Marxism/index.php/BasisInfo/Teacher/all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:BasisInfo
+
+[ 2016-09-30T12:28:27+08:00 ] 127.0.0.1 /Marxism/Marxism/index.php/BasisInfo/Student/all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:BasisInfo
+
+[ 2016-09-30T12:39:00+08:00 ] 127.0.0.1 /Marxism/Marxism/index.php/BasisInfo/Student/all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+ERR: 无法加载模块:BasisInfo
+

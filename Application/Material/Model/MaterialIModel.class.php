@@ -1,20 +1,19 @@
 <?php
-namespace Achieve\Model;
+namespace Material\Model;
 use Common\Model\HyAllModel;
-//use System\Model\HomkaiServiceModel;
 
 /**
  * 班级管理模型
  *
  * @author Homkai QQ:345887894
  */
-class AchieverModel extends HyAllModel {
+class MaterialIModel extends HyAllModel {
 
 	/**
 	 * @overrides
 	 */
 	protected function initTableName(){
-		return 'achiever';
+		return 'material';
 	}
 	
 	/**
@@ -22,8 +21,8 @@ class AchieverModel extends HyAllModel {
 	 */
 	protected function initInfoOptions() {
 		return array (
-				'title' => '成果完成人',
-				'subtitle' => '管理成果完成人的信息' 
+				'title' => '材料图片',
+				'subtitle' => '管理材料图片' 
 		);
 	}
 	
@@ -34,7 +33,7 @@ class AchieverModel extends HyAllModel {
 		return array (
 				'where' => array (
 						'status'=>array('eq',1),
-						'id'=>array('gt',0)
+						'type_id'=>array('eq',2)
 				) 
 		);
 	}
@@ -45,7 +44,6 @@ class AchieverModel extends HyAllModel {
 		return array (
 				'checkbox'	=> true,
 				'deleteType'=> 'status|9',
-				'okRefresh'	=>	true,
 				'actions' 	=> array (
 						'edit' => array (
 								'title' => '编辑',
@@ -58,12 +56,17 @@ class AchieverModel extends HyAllModel {
 						) 
 				),
 				'buttons'	=> array(
+						/*'chart' =>array(
+								'title'=>'汇总',
+								'icon'=>'fa-bar-chart',
+								'detail'=>true
+						),*/
 						'add'=>array(
 								'title'=>'新增',
 								'icon'=>'fa-plus'
 						)
 				),
-				// 'initJS'	=> 'ClassInfo',
+				/*'initJS'	=> 'ClassInfo',*/
 		);
 	}
 	/**
@@ -71,8 +74,8 @@ class AchieverModel extends HyAllModel {
 	 */
 	protected function initFieldsOptions() {
 		return array (
-				'name' => array (
-						'title' => '完成人',
+				'title' => array (
+						'title' => '名称',
 						'list' => array (
 								'order' => 'CONVERT(`name` USING gbk)',
 								'callback'=>array('tplReplace', C('TPL_DETAIL_BTN')),
@@ -83,43 +86,25 @@ class AchieverModel extends HyAllModel {
 						'form' => array (
 								'validate' => array (
 										'required' => true,
-										'minlength' => 2
+										'minlength' => 1
 								)
 						) 
 				),
-				'awards' => array (
-						'title' => '获得荣誉',
-						'list' => array (
-								'search' => array (
-										'type' => 'text' 
-								)
-						),
-						'form' => array (
-								'type' => 'text',
-								'validate' => array (
-										'required' => true,
-										
-								) 
-						) 
+				'file_id'=>array(
+					
+					'form'=>array(
+						'title'=>'上传图片',
+						'type'=>'file'
+					)
 				),
-				'message' => array (
-						
-						'form' => array (
-								'title' => '个人简介',
-								'type' => 'text',
-								'validate' => array (
-										'required' => true ,
-										
-								) 
-						) 
-				),
-				'photo_id'=>array(
-						
-						'form'=> array(
-							'title'=>'上传照片',
-							'type'=>'file'
+				'type_id'=>array(
+					'form'=>array(
+						'fill'=>array(
+							'both'=>array('value',2)
 						)
+					)
 				)
+				
 				
 		);
 	}
@@ -127,42 +112,23 @@ class AchieverModel extends HyAllModel {
 	 * 用于支持fieldsOptions
 	 */
 
-	
 	public function detail($pk){
 		$where = array('id'=>$pk);
-		
-		$arr = $this->associate(array('frame_file|photo_id|id|savepath,savename,id'))->where(array('id'=>$pk))->find();
-		/*dump($arr);
-		dump($arr['savepath'].$arr['savename']);*/
+		$arr = $this->associate(array('frame_file|file_id|id|savepath,savename,id||left'))->where($where)->find();
+
 		return array(
 			'table'=>array(
-				'name'=>array(
-					'title'=>'姓名',
-					'icon'=>'fa-list-alt',
-					'style'=>'blue',
-					'value'=>array(
-						''=>$arr['name']?('<pre>'.$arr['name'].'</pre>') : '无'
-					)
+				'title'=>array(
+					'title'=>'图片名称',
+					'icon' => 'fa-list-alt',
+                    'style' => 'green',
+                    'cols'=>'0,12',
+                    'value' => array (
+                        '' => $arr['title'] ? ('<pre>'.$arr['title'].'</pre>') : '无'
+                    )
 				),
-				'awards'=>array(
-					'title'=>'获得荣誉',
-					'icon'=> 'fa-list-alt',
-					'style'=>'red',
-					'value'=>array(
-						''=>$arr['awards']?('<pre>'.$arr['awards'].'</pre>') : '无'
-					)
-				),
-				'message'=>array(
-					'title'=>'个人简介',
-					'icon'=> 'fa-list-alt',
-					'style'=>'green',
-
-					'value'=>array(
-						''=>$arr['message']?('<pre>'.$arr['message'].'</pre>') : '无'
-					)
-				),
-				'photo_id'=>array(
-					'title'=>'照片',
+				'file_id'=>array(
+					'title'=>'图片',
 					'icon'=> 'fa-list-alt',
 					'style'=>'green',
 
@@ -171,15 +137,13 @@ class AchieverModel extends HyAllModel {
 					)
 				)
 			)
-			
-		
 		);
 	}
 	/**
 	 * 图表汇总
 	 * @return json
 	 */
-/*	protected function detail_chart(){
+	/*protected function detail_chart(){
 		$grades=$this->associate(array('student|id|class_id'))
 			->where(array('student.status'=>1,'status'=>1,'college_id'=>ss_clgid()))
 			->field(array('grade'=>'name','count(grade)'=>'value'))->group('grade')->order('grade asc')->select();
