@@ -74,7 +74,7 @@ class MaterialVModel extends HyAllModel {
 	 */
 	protected function initFieldsOptions() {
 		return array (
-				'name' => array (
+				'title' => array (
 						'title' => '视频名称',
 						'list' => array (
 								'order' => 'CONVERT(`name` USING gbk)',
@@ -114,8 +114,7 @@ class MaterialVModel extends HyAllModel {
 
 	public function detail($pk){
 		$where = array('id'=>$pk);
-		$arr = $this->where($where)->find();
-		$total = $this->associate(array('student|id|class_id'))->where($where)->count();
+		$arr = $this->associate(array('frame_file|file_id|id|savepath,savename,id||left'))->where($where)->find();
 		return array(
 			'table'=>array(
 				'title'=>array(
