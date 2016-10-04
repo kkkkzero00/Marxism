@@ -13,7 +13,7 @@ class MaterialAModel extends HyAllModel {
 	 * @overrides
 	 */
 	protected function initTableName(){
-		return 'material';
+		return 'material'; 
 	}
 	
 	/**
