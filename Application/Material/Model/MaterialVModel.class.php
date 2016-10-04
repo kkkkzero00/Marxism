@@ -132,7 +132,13 @@ class MaterialVModel extends HyAllModel {
 					'style'=>'green',
 
 					'value'=>array(
-						''=>$arr['id']?("<pre><img src='Marxism/Public/uploads/".$arr['savepath'].$arr['savename']."'></pre>") : '无'
+						''=>$arr['id']?(
+							"<pre>
+								<video controls autoplay>
+									<source src='".$arr['savepath'].$arr['savename']."' type='video/mp4'>
+								</video>
+							</pre>"
+						) : '无'
 					)
 				)
 			)
