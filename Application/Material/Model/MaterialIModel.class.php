@@ -104,6 +104,17 @@ class MaterialIModel extends HyAllModel {
 						)
 					)
 				),
+				'create_time' => array (
+	                'list'=>array(
+	                    'title'=>'发布时间',
+	                    'callback'=>array('dataTotime')
+	                ),
+	                'form' => array (
+	                    'fill'=>array(
+	                        'add'=> array('value',time())
+	                    )
+	                )
+	            ),
 				'status'=>array(
 					'title'=>'状态',
 					'list'=>array(
@@ -112,7 +123,8 @@ class MaterialIModel extends HyAllModel {
 					'form'=>array(
 						'type'=>'select'
 					)
-				)
+				),
+				
 				
 				
 		);
@@ -148,6 +160,10 @@ class MaterialIModel extends HyAllModel {
 			)
 		);
 	}
+
+	protected  function callback_dataTotime($time){
+        return to_time($time);
+    }
 	/**
 	 * 图表汇总
 	 * @return json

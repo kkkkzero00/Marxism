@@ -244,9 +244,9 @@
 var _ROOT_ = '/Marxism/Marxism',
     _PUBLIC_ = '/Marxism/Marxism/Public',
     _INDEX_ = '/Marxism/Marxism/index.php',
-    _ACTION_ = '/Marxism/Marxism/index.php/Material/MaterialI/all',
-    _MODULE_ = '/Marxism/Marxism/index.php/Material',
-    _CONTROLLER_ = '/Marxism/Marxism/index.php/Material/MaterialI';
+    _ACTION_ = '/Marxism/Marxism/index.php/Brief/BriefV/all',
+    _MODULE_ = '/Marxism/Marxism/index.php/Brief',
+    _CONTROLLER_ = '/Marxism/Marxism/index.php/Brief/BriefV';
 </script>
 <!-- BEGIN CORE PLUGINS -->
 <!--[if lt IE 9]>

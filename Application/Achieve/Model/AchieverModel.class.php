@@ -120,13 +120,16 @@ class AchieverModel extends HyAllModel {
 				),
 				'awards' => array (
 						'title' => '获得荣誉',
-						'list' => array (
-								'search' => array (
-										'type' => 'text' 
-								)
+						'list' => array (	
 						),
 						'form' => array (
-								'type' => 'text',
+								'title' => '获得荣誉',
+								'type' => 'textarea',
+								'attr'=>'style="height:800px;width:115%;"',
+								'style'=>'make-ueditor',
+								'fill'=>array(
+			                        'both'=>array('content')
+			                    ),
 								'validate' => array (
 										'required' => true,
 										
@@ -155,7 +158,18 @@ class AchieverModel extends HyAllModel {
 							'title'=>'上传照片',
 							'type'=>'file'
 						)
-				)
+				),
+				'create_time' => array (
+	                'list'=>array(
+	                    'title'=>'发布时间',
+	                    'callback'=>array('dataTotime')
+	                ),
+	                'form' => array (
+	                    'fill'=>array(
+	                        'add'=> array('value',time())
+	                    )
+	                )
+	            ),
 				
 		);
 	}
@@ -235,6 +249,10 @@ class AchieverModel extends HyAllModel {
 			return '否';
 		}
 	}
+
+	protected  function callback_dataTotime($time){
+        return to_time($time);
+    }
 
 	
 
