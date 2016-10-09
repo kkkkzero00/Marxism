@@ -1,0 +1,12 @@
+[ 2016-10-08T19:48:43+08:00 ] ::1 /Marxism/Marxism/index.php/Category/Category/all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+ERR: 无法加载模块:Category
+
+[ 2016-10-08T19:48:48+08:00 ] ::1 /Marxism/Marxism/index.php/Category/Details/all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+ERR: 无法加载模块:Category
+

@@ -32,7 +32,7 @@ class MaterialAModel extends HyAllModel {
 	protected function initSqlOptions() {
 		return array (
 				'where' => array (
-						'status'=>array('eq',1),
+						'status'=>array('lt',9),
 						'type_id'=>array('eq',1)
 				) 
 		);
@@ -62,7 +62,25 @@ class MaterialAModel extends HyAllModel {
 								'icon'=>'fa-plus'
 						)
 				),
-				/*'initJS'	=> 'ClassInfo',*/
+				'initJS'	=> array(
+						'UEditor'=>json_encode(
+                            array(
+                                'fullscreen', 'source', '|', 'undo', 'redo', '|',
+                                'bold', 'italic', 'underline', 'fontborder', 'strikethrough', 'superscript', 'subscript', 'removeformat', 'formatmatch', 'autotypeset', 'blockquote', 'pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist', 'selectall', 'cleardoc', '|',
+                                'rowspacingtop', 'rowspacingbottom', 'lineheight', '|',
+                                'customstyle', 'paragraph', 'fontfamily', 'fontsize', '|',
+                                'directionalityltr', 'directionalityrtl', 'indent', '|',
+                                'justifyleft', 'justifycenter', 'justifyright', 'justifyjustify', '|', 'touppercase', 'tolowercase', '|',
+                                'link', 'unlink', 'anchor', '|', 'imagenone', 'imageleft', 'imageright', 'imagecenter', '|',
+                                'simpleupload', 'insertimage', 'emotion', 'scrawl', 'insertvideo', 'music', 'attachment', 'map', 'gmap', 'insertframe', 'insertcode', 'webapp', 'pagebreak', 'template', 'background', '|',
+                                'horizontal', 'date', 'time', 'spechars', 'snapscreen', 'wordimage', '|',
+                                'inserttable', 'deletetable', 'insertparagraphbeforetable', 'insertrow', 'deleterow', 'insertcol', 'deletecol', 'mergecells', 'mergeright', 'mergedown', 'splittocells', 'splittorows', 'splittocols', 'charts', '|',
+                                'print', 'preview', 'searchreplace', 'help', 'drafts'
+                            )
+               		 	),
+               		 	'fullScreen'
+				),
+				'formSize'=>'full',
 		);
 	}
 	/**
@@ -93,9 +111,14 @@ class MaterialAModel extends HyAllModel {
 						),
 						'form'	=> array(
 								'type'	=>	'textarea',
+								'attr'=>'style="height:800px;width:115%;"',
+								'style'=>'make-ueditor',
+								'fill'=>array(
+			                        'both'=>array('content')
+			                    ),
 								'validate' => array (
-										'required' => true,
-										/*'minlength' => 2*/
+									'required' => true,
+									/*'minlength' => 2*/
 								)
 						)
 				),
@@ -105,6 +128,15 @@ class MaterialAModel extends HyAllModel {
 						'fill'=>array(
 							'both'=>array('value',1)
 						)
+					)
+				),
+				'status'=>array(
+					'title'=>'状态',
+					'list'=>array(
+						'callback'=>array('status')
+					),
+					'form'=>array(
+						'type'=>'select'
 					)
 				)
 				
@@ -125,6 +157,7 @@ class MaterialAModel extends HyAllModel {
 					'title'=>'标题',
 					'icon'	=>	'fa-list-alt',
 					'style'	=>	'green',
+					'cols'=>'0,12',
 					'value'	=>	array(
 						''=> $arr['title']?('<pre>'.$arr['title'].'</pre>'):'无'
 					)
@@ -135,7 +168,7 @@ class MaterialAModel extends HyAllModel {
 					'style'	=>	'green',
 					'cols'=>'0,12',
 					'value'	=>	array(
-						''=> $arr['content']?('<pre>'.$arr['content'].'</pre>'):'无'
+						''=> $arr['content']?("<p style='text-indent:30px'>".$arr['content']."<p>"):'无'
 					)
 				)
 			

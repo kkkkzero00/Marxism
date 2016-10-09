@@ -32,7 +32,7 @@ class MaterialVModel extends HyAllModel {
 	protected function initSqlOptions() {
 		return array (
 				'where' => array (
-						'status'=>array('eq',1),
+						'status'=>array('lt',9),
 						'type_id'=>array('eq',3)
 				) 
 		);
@@ -90,11 +90,16 @@ class MaterialVModel extends HyAllModel {
 								)
 						) 
 				),
-				'file_id'=>array(
-					
+				'content'=>array(
+					'list'=>array(
+						
+					),
 					'form'=>array(
-						'title'=>'上传视频',
-						'type'=>'file'
+						'title'=>'输入视频网址',
+						'type'=>'text',
+						'validate'=>array(
+							'required'=>true
+						)
 					)
 				),
 				'type_id'=>array(
@@ -102,6 +107,15 @@ class MaterialVModel extends HyAllModel {
 						'fill'=>array(
 							'both'=>array('value',3)
 						)
+					)
+				),
+				'status'=>array(
+					'title'=>'状态',
+					'list'=>array(
+						'callback'=>array('status')
+					),
+					'form'=>array(
+						'type'=>'select'
 					)
 				)
 				
@@ -114,7 +128,8 @@ class MaterialVModel extends HyAllModel {
 
 	public function detail($pk){
 		$where = array('id'=>$pk);
-		$arr = $this->associate(array('frame_file|file_id|id|savepath,savename,id||left'))->where($where)->find();
+		$arr = $this->where($where)->find();
+		
 		return array(
 			'table'=>array(
 				'title'=>array(
@@ -126,18 +141,14 @@ class MaterialVModel extends HyAllModel {
                         '' => $arr['title'] ? ('<pre>'.$arr['title'].'</pre>') : '无'
                     )
 				),
-				'file_id'=>array(
+				'content'=>array(
 					'title'=>'查看视频',
 					'icon'=> 'fa-list-alt',
 					'style'=>'green',
-
+					'cols'=>'0,12',
 					'value'=>array(
 						''=>$arr['id']?(
-							"<pre>
-								<video controls autoplay>
-									<source src='".$arr['savepath'].$arr['savename']."' type='video/mp4'>
-								</video>
-							</pre>"
+							"<iframe height=498 width=510 src='http://player.youku.com/embed/XMTc1Mjc2NjQyNA==' frameborder=0 'allowfullscreen'></iframe>"
 						) : '无'
 					)
 				)

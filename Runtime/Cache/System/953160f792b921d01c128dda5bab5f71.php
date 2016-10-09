@@ -173,7 +173,7 @@
         <div class="page-content">
             <!-- BEGIN PAGE HEADER-->
             <h3 class="page-title">
-                国教管理系统&nbsp;<small>简洁、流畅、安全、自适应移动设备</small>
+                马克思学院管理系统&nbsp;<small>简洁、流畅、安全、自适应移动设备</small>
             </h3>
             <div class="page-bar">
                 

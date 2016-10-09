@@ -32,7 +32,7 @@ class MaterialIModel extends HyAllModel {
 	protected function initSqlOptions() {
 		return array (
 				'where' => array (
-						'status'=>array('eq',1),
+						'status'=>array('lt',9),
 						'type_id'=>array('eq',2)
 				) 
 		);
@@ -103,6 +103,15 @@ class MaterialIModel extends HyAllModel {
 							'both'=>array('value',2)
 						)
 					)
+				),
+				'status'=>array(
+					'title'=>'状态',
+					'list'=>array(
+						'callback'=>array('status')
+					),
+					'form'=>array(
+						'type'=>'select'
+					)
 				)
 				
 				
@@ -131,9 +140,9 @@ class MaterialIModel extends HyAllModel {
 					'title'=>'图片',
 					'icon'=> 'fa-list-alt',
 					'style'=>'green',
-
+					'cols'=>'0,12',
 					'value'=>array(
-						''=>$arr['id']?("<pre><img src='Marxism/Public/uploads/".$arr['savepath'].$arr['savename']."'></pre>") : '无'
+						''=>$arr['id']?("<img width='400' height='360' src='".__ROOT__."/Public/uploads/".$arr['savepath'].$arr['savename']."'>") : '无'
 					)
 				)
 			)

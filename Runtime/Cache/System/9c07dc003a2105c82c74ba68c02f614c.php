@@ -20,32 +20,32 @@
 <meta content="<?php echo S('SITE_ADMIN_DESCRIPTION');?>" name="description"/>
 <meta content="homyit.cn" name="author"/>
 <!-- BEGIN GLOBAL MANDATORY STYLES -->
-<link href="/SIS.JXNU-B/Public/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-<link href="/SIS.JXNU-B/Public/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
-<link href="/SIS.JXNU-B/Public/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-<link href="/SIS.JXNU-B/Public/assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+<link href="/Marxism/Marxism/Public/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<link href="/Marxism/Marxism/Public/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+<link href="/Marxism/Marxism/Public/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="/Marxism/Marxism/Public/assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
 <!-- END GLOBAL MANDATORY STYLES -->
 <!-- BEGIN PAGE LEVEL STYLES -->
 
-<link href="/SIS.JXNU-B/Public/assets/global/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css"/>
-<link href="/SIS.JXNU-B/Public/assets/global/plugins/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" type="text/css"/>
-<link href="/SIS.JXNU-B/Public/assets/global/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css"/>
-<link href="/SIS.JXNU-B/Public/assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css" rel="stylesheet" type="text/css"/>
-<link href="/SIS.JXNU-B/Public/assets/global/plugins/datatables/extensions/Responsive/css/dataTables.responsive.css" rel="stylesheet" type="text/css"/>
-<link href="/SIS.JXNU-B/Public/assets/global/plugins/datatables/extensions/TableTools/css/dataTables.tableTools.css" rel="stylesheet" type="text/css"/>
-<link href="/SIS.JXNU-B/Public/assets/global/plugins/jquery-fileapi/css/jquery-fileapi.custom.css" rel="stylesheet" type="text/css"/>
+<link href="/Marxism/Marxism/Public/assets/global/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css"/>
+<link href="/Marxism/Marxism/Public/assets/global/plugins/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" type="text/css"/>
+<link href="/Marxism/Marxism/Public/assets/global/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css"/>
+<link href="/Marxism/Marxism/Public/assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css" rel="stylesheet" type="text/css"/>
+<link href="/Marxism/Marxism/Public/assets/global/plugins/datatables/extensions/Responsive/css/dataTables.responsive.css" rel="stylesheet" type="text/css"/>
+<link href="/Marxism/Marxism/Public/assets/global/plugins/datatables/extensions/TableTools/css/dataTables.tableTools.css" rel="stylesheet" type="text/css"/>
+<link href="/Marxism/Marxism/Public/assets/global/plugins/jquery-fileapi/css/jquery-fileapi.custom.css" rel="stylesheet" type="text/css"/>
 
-<?php if(is_array($_assets["GLOBAL"]["CSS"])): foreach($_assets["GLOBAL"]["CSS"] as $key=>$item): ?><link href="/SIS.JXNU-B/Public/assets/global/styles/<?php echo ($item); ?>" rel="stylesheet" type="text/css"/><?php endforeach; endif; ?>
-<?php if(is_array($_assets["PLUGINS"]["CSS"])): foreach($_assets["PLUGINS"]["CSS"] as $key=>$item): ?><link href="/SIS.JXNU-B/Public/assets/global/plugins/<?php echo ($item); ?>" rel="stylesheet" type="text/css"/><?php endforeach; endif; ?>
-<?php if(is_array($_assets["PAGES"]["CSS"])): foreach($_assets["PAGES"]["CSS"] as $key=>$item): ?><link href="/SIS.JXNU-B/Public/assets/pages/styles/<?php echo ($item); ?>" rel="stylesheet" type="text/css"/><?php endforeach; endif; ?>
+<?php if(is_array($_assets["GLOBAL"]["CSS"])): foreach($_assets["GLOBAL"]["CSS"] as $key=>$item): ?><link href="/Marxism/Marxism/Public/assets/global/styles/<?php echo ($item); ?>" rel="stylesheet" type="text/css"/><?php endforeach; endif; ?>
+<?php if(is_array($_assets["PLUGINS"]["CSS"])): foreach($_assets["PLUGINS"]["CSS"] as $key=>$item): ?><link href="/Marxism/Marxism/Public/assets/global/plugins/<?php echo ($item); ?>" rel="stylesheet" type="text/css"/><?php endforeach; endif; ?>
+<?php if(is_array($_assets["PAGES"]["CSS"])): foreach($_assets["PAGES"]["CSS"] as $key=>$item): ?><link href="/Marxism/Marxism/Public/assets/pages/styles/<?php echo ($item); ?>" rel="stylesheet" type="text/css"/><?php endforeach; endif; ?>
 
 <!-- END PAGE LEVEL STYLES -->
 <!-- BEGIN THEME STYLES -->
-<link href="/SIS.JXNU-B/Public/assets/global/styles/components.css" id="style_components" rel="stylesheet" type="text/css"/>
-<link href="/SIS.JXNU-B/Public/assets/global/styles/plugins.css" rel="stylesheet" type="text/css"/>
-<link href="/SIS.JXNU-B/Public/assets/layout/styles/layout.css" rel="stylesheet" type="text/css"/>
-<link href="/SIS.JXNU-B/Public/assets/layout/styles/themes/blue.css" rel="stylesheet" type="text/css"/>
-<link href="/SIS.JXNU-B/Public/assets/global/styles/hyframe.css" rel="stylesheet" type="text/css"/>
+<link href="/Marxism/Marxism/Public/assets/global/styles/components.css" id="style_components" rel="stylesheet" type="text/css"/>
+<link href="/Marxism/Marxism/Public/assets/global/styles/plugins.css" rel="stylesheet" type="text/css"/>
+<link href="/Marxism/Marxism/Public/assets/layout/styles/layout.css" rel="stylesheet" type="text/css"/>
+<link href="/Marxism/Marxism/Public/assets/layout/styles/themes/blue.css" rel="stylesheet" type="text/css"/>
+<link href="/Marxism/Marxism/Public/assets/global/styles/hyframe.css" rel="stylesheet" type="text/css"/>
 <!-- END THEME STYLES -->
 <link rel="shortcut icon" href="favicon.ico"/>
 </head>
@@ -59,7 +59,7 @@
         <!-- BEGIN LOGO -->
         <div class="page-logo">
             <a href="index.html">
-                <img src="/SIS.JXNU-B/Public/assets/layout/img/logo-default.png" alt="logo" class="logo-default"/>
+                <img src="/Marxism/Marxism/Public/assets/layout/img/logo-default.png" alt="logo" class="logo-default"/>
             </a>
             <div class="menu-toggler sidebar-toggler">
                 <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
@@ -241,54 +241,54 @@
 <!-- BEGIN JAVASCRIPTS -->
 <script type="text/javascript">
 /* GLOBAL URL */
-var _ROOT_ = '/SIS.JXNU-B',
-    _PUBLIC_ = '/SIS.JXNU-B/Public',
-    _INDEX_ = '/SIS.JXNU-B/index.php',
-    _ACTION_ = '/SIS.JXNU-B/index.php/System/HyAlert/all',
-    _MODULE_ = '/SIS.JXNU-B/index.php/System',
-    _CONTROLLER_ = '/SIS.JXNU-B/index.php/System/HyAlert';
+var _ROOT_ = '/Marxism/Marxism',
+    _PUBLIC_ = '/Marxism/Marxism/Public',
+    _INDEX_ = '/Marxism/Marxism/index.php',
+    _ACTION_ = '/Marxism/Marxism/index.php/System/HyAlert/all',
+    _MODULE_ = '/Marxism/Marxism/index.php/System',
+    _CONTROLLER_ = '/Marxism/Marxism/index.php/System/HyAlert';
 </script>
 <!-- BEGIN CORE PLUGINS -->
 <!--[if lt IE 9]>
-<script src="/SIS.JXNU-B/Public/assets/global/plugins/respond.min.js"></script>
-<script src="/SIS.JXNU-B/Public/assets/global/plugins/excanvas.min.js"></script> 
+<script src="/Marxism/Marxism/Public/assets/global/plugins/respond.min.js"></script>
+<script src="/Marxism/Marxism/Public/assets/global/plugins/excanvas.min.js"></script> 
 <![endif]-->
-<script src="/SIS.JXNU-B/Public/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
-<script src="/SIS.JXNU-B/Public/assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="/SIS.JXNU-B/Public/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
-<script src="/SIS.JXNU-B/Public/assets/global/plugins/jquery.blockui.js" type="text/javascript"></script>
-<script src="/SIS.JXNU-B/Public/assets/global/plugins/store-json2.min.js" type="text/javascript"></script>
-<script src="/SIS.JXNU-B/Public/assets/global/plugins/crypto.custom.min.js" type="text/javascript"></script>
-<script src="/SIS.JXNU-B/Public/assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
-<script src="/SIS.JXNU-B/Public/assets/global/plugins/bootbox.min.js" type="text/javascript"></script>
-<script src="/SIS.JXNU-B/Public/assets/global/plugins/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+<script src="/Marxism/Marxism/Public/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="/Marxism/Marxism/Public/assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/Marxism/Marxism/Public/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="/Marxism/Marxism/Public/assets/global/plugins/jquery.blockui.js" type="text/javascript"></script>
+<script src="/Marxism/Marxism/Public/assets/global/plugins/store-json2.min.js" type="text/javascript"></script>
+<script src="/Marxism/Marxism/Public/assets/global/plugins/crypto.custom.min.js" type="text/javascript"></script>
+<script src="/Marxism/Marxism/Public/assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+<script src="/Marxism/Marxism/Public/assets/global/plugins/bootbox.min.js" type="text/javascript"></script>
+<script src="/Marxism/Marxism/Public/assets/global/plugins/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
 <!-- END CORE PLUGINS -->
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
 
-<script src="/SIS.JXNU-B/Public/assets/global/plugins/datatables/media/js/jquery.dataTables.min.js" type="text/javascript"></script>
-<script src="/SIS.JXNU-B/Public/assets/global/plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js" type="text/javascript"></script>
-<script src="/SIS.JXNU-B/Public/assets/global/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.min.js" type="text/javascript"></script>
-<script src="/SIS.JXNU-B/Public/assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js" type="text/javascript"></script>
-<script src="/SIS.JXNU-B/Public/assets/global/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
-<script src="/SIS.JXNU-B/Public/assets/global/plugins/bootstrap-select/js/bootstrap-select.min.js" type="text/javascript"></script>
-<script src="/SIS.JXNU-B/Public/assets/global/plugins/jquery-validation/jquery.validate.min.js" type="text/javascript"></script>
+<script src="/Marxism/Marxism/Public/assets/global/plugins/datatables/media/js/jquery.dataTables.min.js" type="text/javascript"></script>
+<script src="/Marxism/Marxism/Public/assets/global/plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js" type="text/javascript"></script>
+<script src="/Marxism/Marxism/Public/assets/global/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.min.js" type="text/javascript"></script>
+<script src="/Marxism/Marxism/Public/assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js" type="text/javascript"></script>
+<script src="/Marxism/Marxism/Public/assets/global/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+<script src="/Marxism/Marxism/Public/assets/global/plugins/bootstrap-select/js/bootstrap-select.min.js" type="text/javascript"></script>
+<script src="/Marxism/Marxism/Public/assets/global/plugins/jquery-validation/jquery.validate.min.js" type="text/javascript"></script>
 <script type="text/javascript">window.FileAPI = {staticPath: _PUBLIC_+'/assets/global/plugins/jquery-fileapi/FileAPI/'};</script>
-<script src="/SIS.JXNU-B/Public/assets/global/plugins/jquery-fileapi/FileAPI/FileAPI.min.js" type="text/javascript"></script>
-<script src="/SIS.JXNU-B/Public/assets/global/plugins/jquery-fileapi/FileAPI/FileAPI.exif.js" type="text/javascript"></script>
-<script src="/SIS.JXNU-B/Public/assets/global/plugins/jquery-fileapi/jquery.fileapi.custom.js" type="text/javascript"></script>
-<script src="/SIS.JXNU-B/Public/assets/global/scripts/datatable.js" type="text/javascript"></script>
-<script src="/SIS.JXNU-B/Public/assets/global/scripts/jquery.hyall.js" type="text/javascript"></script>
-<script src="/SIS.JXNU-B/Public/assets/global/scripts/hy-import.js" type="text/javascript"></script>
+<script src="/Marxism/Marxism/Public/assets/global/plugins/jquery-fileapi/FileAPI/FileAPI.min.js" type="text/javascript"></script>
+<script src="/Marxism/Marxism/Public/assets/global/plugins/jquery-fileapi/FileAPI/FileAPI.exif.js" type="text/javascript"></script>
+<script src="/Marxism/Marxism/Public/assets/global/plugins/jquery-fileapi/jquery.fileapi.custom.js" type="text/javascript"></script>
+<script src="/Marxism/Marxism/Public/assets/global/scripts/datatable.js" type="text/javascript"></script>
+<script src="/Marxism/Marxism/Public/assets/global/scripts/jquery.hyall.js" type="text/javascript"></script>
+<script src="/Marxism/Marxism/Public/assets/global/scripts/hy-import.js" type="text/javascript"></script>
 <?php echo ($_script); ?>
 
-<?php if(is_array($_assets["PLUGINS"]["JS"])): foreach($_assets["PLUGINS"]["JS"] as $key=>$item): ?><script src="/SIS.JXNU-B/Public/assets/global/plugins/<?php echo ($item); ?>" type="text/javascript"></script><?php endforeach; endif; ?>
+<?php if(is_array($_assets["PLUGINS"]["JS"])): foreach($_assets["PLUGINS"]["JS"] as $key=>$item): ?><script src="/Marxism/Marxism/Public/assets/global/plugins/<?php echo ($item); ?>" type="text/javascript"></script><?php endforeach; endif; ?>
 <!-- BEGIN CORE SCRIPTS -->
-<script src="/SIS.JXNU-B/Public/assets/global/scripts/metronic.js" type="text/javascript"></script>
-<script src="/SIS.JXNU-B/Public/assets/layout/scripts/layout.js" type="text/javascript"></script>
-<script src="/SIS.JXNU-B/Public/assets/global/scripts/hyframe.js" type="text/javascript"></script>
+<script src="/Marxism/Marxism/Public/assets/global/scripts/metronic.js" type="text/javascript"></script>
+<script src="/Marxism/Marxism/Public/assets/layout/scripts/layout.js" type="text/javascript"></script>
+<script src="/Marxism/Marxism/Public/assets/global/scripts/hyframe.js" type="text/javascript"></script>
 <!-- END CORE SCRIPTS -->
-<?php if(is_array($_assets["GLOBAL"]["JS"])): foreach($_assets["GLOBAL"]["JS"] as $key=>$item): ?><script src="/SIS.JXNU-B/Public/assets/global/scripts/<?php echo ($item); ?>" type="text/javascript"></script><?php endforeach; endif; ?>
-<?php if(is_array($_assets["PAGES"]["JS"])): foreach($_assets["PAGES"]["JS"] as $key=>$item): ?><script src="/SIS.JXNU-B/Public/assets/pages/scripts/<?php echo ($item); ?>" type="text/javascript"></script><?php endforeach; endif; ?>
+<?php if(is_array($_assets["GLOBAL"]["JS"])): foreach($_assets["GLOBAL"]["JS"] as $key=>$item): ?><script src="/Marxism/Marxism/Public/assets/global/scripts/<?php echo ($item); ?>" type="text/javascript"></script><?php endforeach; endif; ?>
+<?php if(is_array($_assets["PAGES"]["JS"])): foreach($_assets["PAGES"]["JS"] as $key=>$item): ?><script src="/Marxism/Marxism/Public/assets/pages/scripts/<?php echo ($item); ?>" type="text/javascript"></script><?php endforeach; endif; ?>
 <!-- END PAGE LEVEL SCRIPTS -->
 <script type="text/javascript">
 jQuery(document).ready(function() {

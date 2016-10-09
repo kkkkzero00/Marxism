@@ -20,10 +20,10 @@ class AchieverModel extends HyAllModel {
 	/**
 	 * @overrides
 	 */
-	protected function initInfoOptions() {
+	protected function initInfoOptions(){
 		return array (
-				'title' => '成果完成人',
-				'subtitle' => '管理成果完成人的信息' 
+			'title' => '成果完成人',
+			'subtitle' => '管理成果完成人的信息' 
 		);
 	}
 	
@@ -49,7 +49,7 @@ class AchieverModel extends HyAllModel {
 				'actions' 	=> array (
 						'edit' => array (
 								'title' => '编辑',
-								'max' => 1 
+								
 						),
 						'delete' => array (
 								'title' => '删除',								
@@ -63,7 +63,26 @@ class AchieverModel extends HyAllModel {
 								'icon'=>'fa-plus'
 						)
 				),
-				// 'initJS'	=> 'ClassInfo',
+				'initJS'	=> array(
+					'UEditor'=>json_encode(
+                            array(
+                                'fullscreen', 'source', '|', 'undo', 'redo', '|',
+                                'bold', 'italic', 'underline', 'fontborder', 'strikethrough', 'superscript', 'subscript', 'removeformat', 'formatmatch', 'autotypeset', 'blockquote', 'pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist', 'selectall', 'cleardoc', '|',
+                                'rowspacingtop', 'rowspacingbottom', 'lineheight', '|',
+                                'customstyle', 'paragraph', 'fontfamily', 'fontsize', '|',
+                                'directionalityltr', 'directionalityrtl', 'indent', '|',
+                                'justifyleft', 'justifycenter', 'justifyright', 'justifyjustify', '|', 'touppercase', 'tolowercase', '|',
+                                'link', 'unlink', 'anchor', '|', 'imagenone', 'imageleft', 'imageright', 'imagecenter', '|',
+                                'simpleupload', 'insertimage', 'emotion', 'scrawl', 'insertvideo', 'music', 'attachment', 'map', 'gmap', 'insertframe', 'insertcode', 'webapp', 'pagebreak', 'template', 'background', '|',
+                                'horizontal', 'date', 'time', 'spechars', 'snapscreen', 'wordimage', '|',
+                                'inserttable', 'deletetable', 'insertparagraphbeforetable', 'insertrow', 'deleterow', 'insertcol', 'deletecol', 'mergecells', 'mergeright', 'mergedown', 'splittocells', 'splittorows', 'splittocols', 'charts', '|',
+                                'print', 'preview', 'searchreplace', 'help', 'drafts'
+                            )
+                	),
+                	'fullScreen',	
+            	),
+            	'formSize'=>'full',
+				
 		);
 	}
 	/**
@@ -87,6 +106,18 @@ class AchieverModel extends HyAllModel {
 								)
 						) 
 				),
+				'boss_id' => array(
+						'title'	=>	'主要负责人',
+						'list'	=>	array(
+							'callback'=>array('checkChief')
+						),
+						'form'	=>	array(
+							'title'	=>	'是否设为主要负责人',
+							'type'=>'select',	
+										
+							'callback'	=>	array('check_boss_exist'),
+						)
+				),
 				'awards' => array (
 						'title' => '获得荣誉',
 						'list' => array (
@@ -106,7 +137,12 @@ class AchieverModel extends HyAllModel {
 						
 						'form' => array (
 								'title' => '个人简介',
-								'type' => 'text',
+								'type' => 'textarea',
+								'attr'=>'style="height:800px;width:115%;"',
+								'style'=>'make-ueditor',
+								'fill'=>array(
+			                        'both'=>array('content')
+			                    ),
 								'validate' => array (
 										'required' => true ,
 										
@@ -156,18 +192,18 @@ class AchieverModel extends HyAllModel {
 					'title'=>'个人简介',
 					'icon'=> 'fa-list-alt',
 					'style'=>'green',
-
+					'cols'=>'0,12',
 					'value'=>array(
-						''=>$arr['message']?('<pre>'.$arr['message'].'</pre>') : '无'
+						''=>$arr['message']?("<p style='text-indent:30px'>".$arr['message']."</p>") : '无'
 					)
 				),
 				'photo_id'=>array(
 					'title'=>'照片',
 					'icon'=> 'fa-list-alt',
 					'style'=>'green',
-
+					'cols'=>'0,12',
 					'value'=>array(
-						''=>$arr['id']?("<pre><img src='Marxism/Public/uploads/".$arr['savepath'].$arr['savename']."'></pre>") : '无'
+						''=>$arr['id']?("<img width='400' height='300' src='".__ROOT__."/Public/uploads/".$arr['savepath'].$arr['savename']."'>") : '无'
 					)
 				)
 			)
@@ -175,17 +211,31 @@ class AchieverModel extends HyAllModel {
 		
 		);
 	}
-	/**
-	 * 图表汇总
-	 * @return json
-	 */
-/*	protected function detail_chart(){
-		$grades=$this->associate(array('student|id|class_id'))
-			->where(array('student.status'=>1,'status'=>1,'college_id'=>ss_clgid()))
-			->field(array('grade'=>'name','count(grade)'=>'value'))->group('grade')->order('grade asc')->select();
-		$classes=$this->associate(array('student|id|class_id'))
-			->where(array('student.status'=>1,'status'=>1,'college_id'=>ss_clgid()))
-			->field(array('name','count(hy.id)'=>'value'))->group('hy.id')->order('grade asc')->select();
-		return array('json'=>json_encode(array('grades'=>$grades,'classes'=>$classes)));
-	}*/
+
+	protected function getOptions_boss_id(){
+		$boss = $this->where(array('boss_id'=>array('eq',1)))->find();
+		
+		if($boss){
+			return array(
+				'2' => '否'
+			);;
+		}else{
+			return array(
+	            '1' => '是',
+	            '2' => '否'
+	        );
+		}
+         
+    }
+
+	public function callback_checkChief($id){
+		if($id==1){
+			return '是';
+		}else{
+			return '否';
+		}
+	}
+
+	
+
 }

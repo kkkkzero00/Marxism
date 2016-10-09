@@ -14,7 +14,13 @@ return array(
 					'CSS'	=>	array(
 					),
 					'JS'	=>	array(
-							'Class/all'	=>	'echarts-all.custom.min.js',
+						'Achiever/all'	=>	array(
+			                   /* 'umeditor/umeditor.config.js',
+			                    'umeditor/umeditor.min.js',*/
+			                    'ueditor/ueditor.config.js',
+			                    'ueditor/ueditor.all.min.js',
+			                    'ueditor/lang/zh-cn/zh-cn.js'
+			                )
 					)
 			),
 			'PAGES'		=>	array(
@@ -22,7 +28,11 @@ return array(
 							
 					),
 					'JS'	=>	array(
-							'Class/all'	=>	'class-info.js',
+							'Achiever/all'	=>	array(
+								'fullscreen.js',
+								
+							)
+						
 					)
 			)
 		),
