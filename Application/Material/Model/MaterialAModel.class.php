@@ -165,15 +165,7 @@ class MaterialAModel extends HyAllModel {
 	
 		return array(
 			'table'=>array(
-				'title'=>array(
-					'title'=>'标题',
-					'icon'	=>	'fa-list-alt',
-					'style'	=>	'green',
-					'cols'=>'0,12',
-					'value'	=>	array(
-						''=> $arr['title']?('<pre>'.$arr['title'].'</pre>'):'无'
-					)
-				),
+				
 				'content'=>array(
 					'title'=>'内容',
 					'icon'	=> 'fa-list-alt',

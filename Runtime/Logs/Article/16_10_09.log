@@ -1,0 +1,767 @@
+[ 2016-10-09T21:47:26+08:00 ] ::1 /Marxism/Marxism/index.php/Article/Detail/all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP\wamp64\www\Marxism\Marxism\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.004000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `mar_detail` [ RunTime:0.1170s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined variable: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 31 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000000s ]
+INFO: [ hy_log ] --END-- [ RunTime:0.001000s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined index: style F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 23 行.
+NOTIC: [8] Undefined index: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 25 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000000s ]
+INFO: [ hy_log ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: all F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 922 行.
+NOTIC: [8] Undefined index: type F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 428 行.
+SQL: SHOW COLUMNS FROM `mar_category` [ RunTime:0.0480s ]
+SQL: SELECT `id`,`pid`,`name` FROM `mar_category` WHERE `id` > 11  [ RunTime:0.0310s ]
+NOTIC: [8] Undefined index: title F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 425 行.
+NOTIC: [8] Undefined index: title F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 426 行.
+NOTIC: [8] Undefined index: search F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 428 行.
+NOTIC: [8] Undefined index: title F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 425 行.
+NOTIC: [8] Undefined index: list F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 425 行.
+NOTIC: [8] Undefined index: title F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 426 行.
+NOTIC: [8] Undefined index: search F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 428 行.
+NOTIC: [8] Undefined index: search F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 428 行.
+INFO: [ before_view ] --START--
+SQL: SHOW COLUMNS FROM `mar_frame_alert` [ RunTime:0.0480s ]
+SQL: SELECT `id`,`category`,`icon`,`message`,`url`,`type`,`create_time` FROM `mar_frame_alert` where `to_users` LIKE '%,38,%' AND ( IFNULL(`read_users`,'')='' OR `read_users` NOT LIKE '%,38,%') AND `status`=1 ORDER BY `id` DESC [ RunTime:0.0320s ]
+INFO: Run Common\Behavior\HyBeforeViewBehavior [ RunTime:0.092005s ]
+INFO: [ before_view ] --END-- [ RunTime:0.093005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: GLOBAL F:\PHP\wamp64\www\Marxism\Marxism\Runtime\Cache\Article\9c07dc003a2105c82c74ba68c02f614c.php 第 38 行.
+NOTIC: [8] Undefined variable: _middle F:\PHP\wamp64\www\Marxism\Marxism\Runtime\Cache\Article\9c07dc003a2105c82c74ba68c02f614c.php 第 204 行.
+NOTIC: [8] Undefined variable: _bottom F:\PHP\wamp64\www\Marxism\Marxism\Runtime\Cache\Article\9c07dc003a2105c82c74ba68c02f614c.php 第 223 行.
+NOTIC: [8] Undefined variable: _script F:\PHP\wamp64\www\Marxism\Marxism\Runtime\Cache\Article\9c07dc003a2105c82c74ba68c02f614c.php 第 282 行.
+NOTIC: [8] Undefined index: GLOBAL F:\PHP\wamp64\www\Marxism\Marxism\Runtime\Cache\Article\9c07dc003a2105c82c74ba68c02f614c.php 第 290 行.
+NOTIC: [8] Undefined variable: hyMenu F:\PHP\wamp64\www\Marxism\Marxism\Runtime\Cache\Article\9c07dc003a2105c82c74ba68c02f614c.php 第 295 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.269016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.270016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-10-09T21:47:30+08:00 ] ::1 /Marxism/Marxism/index.php/Article/Detail/ajax?q=list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP\wamp64\www\Marxism\Marxism\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.006000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006000s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `mar_detail` [ RunTime:0.1610s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined variable: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 31 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000000s ]
+INFO: [ hy_log ] --END-- [ RunTime:0.001000s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined index: style F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 23 行.
+NOTIC: [8] Undefined index: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 25 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001000s ]
+INFO: [ hy_log ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: limit F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 161 行.
+NOTIC: [8] Undefined index: order F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 163 行.
+NOTIC: [8] Undefined index: field F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: where F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: decrypt F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 242 行.
+SQL: SHOW COLUMNS FROM `mar_detail` [ RunTime:0.0020s ]
+SQL: SELECT 1 FROM `mar_detail` `hy` LEFT JOIN `mar_category` AS `category` ON hy.category_id = category.id  WHERE hy.status = 1  [ RunTime:0.1890s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined index: style F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 23 行.
+NOTIC: [8] Undefined index: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 25 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000000s ]
+INFO: [ hy_log ] --END-- [ RunTime:-0.217012s ]
+NOTIC: [8] Undefined index: hy F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 141 行.
+NOTIC: [8] Undefined index: associate F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 142 行.
+SQL: SHOW COLUMNS FROM `mar_detail` [ RunTime:0.0050s ]
+SQL: SELECT hy.id,hy.category_id,hy.title,hy.content,hy.create_time,hy.update_time,hy.status,category.name AS `category_name` FROM `mar_detail` `hy` LEFT JOIN `mar_category` AS `category` ON hy.category_id = category.id  WHERE hy.status = 1 ORDER BY hy.id desc LIMIT 10   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: hidden F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 595 行.
+NOTIC: [8] Undefined index: hidden F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 595 行.
+NOTIC: [8] Undefined index: title F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 595 行.
+NOTIC: [8] Undefined index: title F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 595 行.
+NOTIC: [8] Undefined index: hidden F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 595 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: list F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 605 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: list F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 605 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: list F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 605 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: info F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 470 行.
+INFO: [ hy_log ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000000s ]
+INFO: [ hy_log ] --END-- [ RunTime:-0.243014s ]
+
+[ 2016-10-09T21:47:31+08:00 ] ::1 /Marxism/Marxism/index.php/Article/Detail/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-10-09T21:47:34+08:00 ] ::1 /Marxism/Marxism/index.php/Article/Detail/ajax?q=detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP\wamp64\www\Marxism\Marxism\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.004001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.005001s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `mar_detail` [ RunTime:0.0890s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined variable: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 31 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000000s ]
+INFO: [ hy_log ] --END-- [ RunTime:0.001000s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined index: style F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 23 行.
+NOTIC: [8] Undefined index: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 25 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001000s ]
+INFO: [ hy_log ] --END-- [ RunTime:0.000000s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined index: style F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 23 行.
+NOTIC: [8] Undefined index: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 25 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000000s ]
+INFO: [ hy_log ] --END-- [ RunTime:-0.002000s ]
+NOTIC: [2] Missing argument 1 for Common\Model\HyFrameModel::find(), called in F:\PHP\wamp64\www\Marxism\Marxism\Application\Article\Model\DetailModel.class.php on line 242 and defined F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 272 行.
+NOTIC: [8] Undefined variable: options F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 273 行.
+NOTIC: [8] Undefined variable: options F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 274 行.
+NOTIC: [8] Undefined index: hy F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 141 行.
+NOTIC: [8] Undefined index: order F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 163 行.
+NOTIC: [8] Undefined index: field F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: decrypt F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 242 行.
+NOTIC: [8] Undefined index: scope F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 248 行.
+NOTIC: [8] Undefined index: count F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 249 行.
+SQL: SHOW COLUMNS FROM `mar_detail` [ RunTime:0.0010s ]
+SQL: SELECT hy.id,hy.category_id,hy.title,hy.content,hy.create_time,hy.update_time,hy.status,category.name AS `category_name` FROM `mar_detail` `hy` LEFT JOIN `mar_category` AS `category` ON hy.category_id = category.id  WHERE hy.id = '1' LIMIT 1   [ RunTime:0.0420s ]
+NOTIC: [8] Undefined variable: tpl F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Controller\HyAllController.class.php 第 90 行.
+INFO: [ before_view ] --START--
+SQL: SHOW COLUMNS FROM `mar_frame_alert` [ RunTime:0.0540s ]
+SQL: SELECT `id`,`category`,`icon`,`message`,`url`,`type`,`create_time` FROM `mar_frame_alert` where `to_users` LIKE '%,38,%' AND ( IFNULL(`read_users`,'')='' OR `read_users` NOT LIKE '%,38,%') AND `status`=1 ORDER BY `id` DESC [ RunTime:0.0010s ]
+INFO: Run Common\Behavior\HyBeforeViewBehavior [ RunTime:0.068003s ]
+INFO: [ before_view ] --END-- [ RunTime:0.068003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: json F:\PHP\wamp64\www\Marxism\Marxism\Runtime\Cache\Article\c6d80dac29f4bb3371a39f454a43cf44.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.114006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2016-10-09T21:48:01+08:00 ] ::1 /Marxism/Marxism/index.php/Article/Detail/all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP\wamp64\www\Marxism\Marxism\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.005000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006000s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `mar_detail` [ RunTime:0.0250s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined variable: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 31 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001000s ]
+INFO: [ hy_log ] --END-- [ RunTime:0.001000s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined index: style F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 23 行.
+NOTIC: [8] Undefined index: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 25 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000000s ]
+INFO: [ hy_log ] --END-- [ RunTime:-0.001000s ]
+NOTIC: [8] Undefined index: all F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 922 行.
+NOTIC: [8] Undefined index: type F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 428 行.
+SQL: SHOW COLUMNS FROM `mar_category` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`pid`,`name` FROM `mar_category` WHERE `id` > 11  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: title F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 425 行.
+NOTIC: [8] Undefined index: title F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 426 行.
+NOTIC: [8] Undefined index: search F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 428 行.
+NOTIC: [8] Undefined index: title F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 425 行.
+NOTIC: [8] Undefined index: list F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 425 行.
+NOTIC: [8] Undefined index: title F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 426 行.
+NOTIC: [8] Undefined index: search F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 428 行.
+NOTIC: [8] Undefined index: search F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 428 行.
+INFO: [ before_view ] --START--
+SQL: SHOW COLUMNS FROM `mar_frame_alert` [ RunTime:0.1070s ]
+SQL: SELECT `id`,`category`,`icon`,`message`,`url`,`type`,`create_time` FROM `mar_frame_alert` where `to_users` LIKE '%,38,%' AND ( IFNULL(`read_users`,'')='' OR `read_users` NOT LIKE '%,38,%') AND `status`=1 ORDER BY `id` DESC [ RunTime:0.0020s ]
+INFO: Run Common\Behavior\HyBeforeViewBehavior [ RunTime:0.126008s ]
+INFO: [ before_view ] --END-- [ RunTime:0.127008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: GLOBAL F:\PHP\wamp64\www\Marxism\Marxism\Runtime\Cache\Article\9c07dc003a2105c82c74ba68c02f614c.php 第 38 行.
+NOTIC: [8] Undefined variable: _middle F:\PHP\wamp64\www\Marxism\Marxism\Runtime\Cache\Article\9c07dc003a2105c82c74ba68c02f614c.php 第 204 行.
+NOTIC: [8] Undefined variable: _bottom F:\PHP\wamp64\www\Marxism\Marxism\Runtime\Cache\Article\9c07dc003a2105c82c74ba68c02f614c.php 第 223 行.
+NOTIC: [8] Undefined variable: _script F:\PHP\wamp64\www\Marxism\Marxism\Runtime\Cache\Article\9c07dc003a2105c82c74ba68c02f614c.php 第 282 行.
+NOTIC: [8] Undefined index: GLOBAL F:\PHP\wamp64\www\Marxism\Marxism\Runtime\Cache\Article\9c07dc003a2105c82c74ba68c02f614c.php 第 290 行.
+NOTIC: [8] Undefined variable: hyMenu F:\PHP\wamp64\www\Marxism\Marxism\Runtime\Cache\Article\9c07dc003a2105c82c74ba68c02f614c.php 第 295 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.115006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.115006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-10-09T21:48:08+08:00 ] ::1 /Marxism/Marxism/index.php/Article/Detail/ajax?q=list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP\wamp64\www\Marxism\Marxism\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.007000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.007000s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `mar_detail` [ RunTime:0.9911s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined variable: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 31 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000000s ]
+INFO: [ hy_log ] --END-- [ RunTime:0.001000s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined index: style F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 23 行.
+NOTIC: [8] Undefined index: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 25 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000000s ]
+INFO: [ hy_log ] --END-- [ RunTime:-0.001000s ]
+NOTIC: [8] Undefined index: limit F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 161 行.
+NOTIC: [8] Undefined index: order F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 163 行.
+NOTIC: [8] Undefined index: field F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: where F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: decrypt F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 242 行.
+SQL: SHOW COLUMNS FROM `mar_detail` [ RunTime:0.0020s ]
+SQL: SELECT 1 FROM `mar_detail` `hy` LEFT JOIN `mar_category` AS `category` ON hy.category_id = category.id  WHERE hy.status = 1  [ RunTime:0.2440s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined index: style F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 23 行.
+NOTIC: [8] Undefined index: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 25 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000000s ]
+INFO: [ hy_log ] --END-- [ RunTime:-0.594034s ]
+NOTIC: [8] Undefined index: hy F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 141 行.
+NOTIC: [8] Undefined index: associate F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 142 行.
+SQL: SHOW COLUMNS FROM `mar_detail` [ RunTime:0.0020s ]
+SQL: SELECT hy.id,hy.category_id,hy.title,hy.content,hy.create_time,hy.update_time,hy.status,category.name AS `category_name` FROM `mar_detail` `hy` LEFT JOIN `mar_category` AS `category` ON hy.category_id = category.id  WHERE hy.status = 1 ORDER BY hy.id desc LIMIT 10   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: hidden F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 595 行.
+NOTIC: [8] Undefined index: hidden F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 595 行.
+NOTIC: [8] Undefined index: title F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 595 行.
+NOTIC: [8] Undefined index: title F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 595 行.
+NOTIC: [8] Undefined index: hidden F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 595 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: list F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 605 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: list F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 605 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: list F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 605 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: info F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 470 行.
+INFO: [ hy_log ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000000s ]
+INFO: [ hy_log ] --END-- [ RunTime:-1.203069s ]
+
+[ 2016-10-09T21:51:48+08:00 ] ::1 /Marxism/Marxism/index.php/Article/Detail/ajax?q=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP\wamp64\www\Marxism\Marxism\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.006000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.007000s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `mar_detail` [ RunTime:0.2220s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined variable: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 31 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001000s ]
+INFO: [ hy_log ] --END-- [ RunTime:0.001000s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined index: style F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 23 行.
+NOTIC: [8] Undefined index: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 25 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000000s ]
+INFO: [ hy_log ] --END-- [ RunTime:-0.001000s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined index: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 25 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000000s ]
+INFO: [ hy_log ] --END-- [ RunTime:-0.625036s ]
+NOTIC: [8] Undefined index: fill F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 935 行.
+NOTIC: [8] Undefined index: add F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 939 行.
+NOTIC: [8] Undefined index: table F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 963 行.
+NOTIC: [8] Undefined index: fill F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 935 行.
+NOTIC: [8] Undefined index: add F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 939 行.
+NOTIC: [8] Undefined index: addon F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 957 行.
+NOTIC: [8] Undefined index: table F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 963 行.
+NOTIC: [8] Undefined index: table F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 963 行.
+NOTIC: [8] Undefined index: table F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 963 行.
+NOTIC: [8] Undefined index: fill F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 935 行.
+NOTIC: [8] Undefined index: add F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 939 行.
+NOTIC: [8] Undefined index: select F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 957 行.
+NOTIC: [8] Undefined index: table F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 963 行.
+NOTIC: [8] Undefined index: table F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 993 行.
+NOTIC: [8] Undefined index: title F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 995 行.
+NOTIC: [8] Undefined index: edit F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 998 行.
+NOTIC: [8] Undefined index: add F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 1000 行.
+NOTIC: [8] Undefined index: server F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 1013 行.
+NOTIC: [8] Undefined index: table F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 993 行.
+NOTIC: [8] Undefined index: title F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 995 行.
+NOTIC: [8] Undefined index: edit F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 998 行.
+NOTIC: [8] Undefined index: add F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 1000 行.
+NOTIC: [8] Undefined index: server F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 1013 行.
+NOTIC: [8] Undefined index: table F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 993 行.
+NOTIC: [8] Undefined index: server F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 1013 行.
+NOTIC: [8] Undefined index: table F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 993 行.
+NOTIC: [8] Undefined index: server F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 1013 行.
+NOTIC: [8] Undefined index: table F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 993 行.
+NOTIC: [8] Undefined index: validate F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 994 行.
+NOTIC: [8] Undefined index: table F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 976 行.
+NOTIC: [8] Undefined index: fill F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 977 行.
+NOTIC: [8] Undefined index: table F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 976 行.
+NOTIC: [8] Undefined index: fill F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 977 行.
+NOTIC: [8] Undefined index: table F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 976 行.
+NOTIC: [8] Undefined index: add F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 978 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: table F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 976 行.
+NOTIC: [8] Undefined index: add F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 978 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: table F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 976 行.
+NOTIC: [8] Undefined index: fill F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 977 行.
+SQL: INSERT INTO `mar_detail` (`title`,`category_id`,`create_time`,`content`,`status`) VALUES ('PS抠图竟多达十种常用方法，最后一个万能了','15','1476021108','<h1 class=\"title\" style=\"margin: 10px 0px; font-family: -apple-system, &quot;Helvetica Neue&quot;, Arial, &quot;PingFang SC&quot;, &quot;lucida grande&quot;, &quot;lucida sans unicode&quot;, lucida, helvetica, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; line-height: 1.5; color: rgb(85, 85, 85); text-rendering: optimizeLegibility; font-size: 32px; word-break: break-all; white-space: normal; background-color: rgb(255, 255, 255);\">PS抠图竟多达十种常用方法，最后一个万能了</h1><p><span class=\"wordage\" style=\"position: relative; top: 1px; margin-right: 10px; font-size: 12px; color: rgb(153, 153, 153);\">字数3376</span>&nbsp;<span class=\"views-count\" style=\"position: relative; top: 1px; margin-right: 10px; font-size: 12px; color: rgb(153, 153, 153);\">阅读9104</span>&nbsp;<span class=\"comments-count\" style=\"position: relative; top: 1px; margin-right: 10px; font-size: 12px; color: rgb(153, 153, 153);\">评论160</span>&nbsp;<span class=\"likes-count\" style=\"position: relative; top: 1px; margin-right: 10px; font-size: 12px; color: rgb(153, 153, 153);\">喜欢815</span></p><blockquote style=\"padding: 10px 15px; margin: 0px 0px 20px; border-left: 4px solid rgb(153, 153, 153); background-color: whitesmoke; word-break: break-word; font-size: 15px; line-height: 30px;\"><p style=\"margin-top: 0px; margin-bottom: 0px; line-height: 1.7; text-align: justify; word-break: break-word;\">聊一聊，PS抠图那些事，十种原生基本工具，用熟了再也不愁抠图去背景了，么么哒。<br/></p></blockquote><p><img src=\"http://upload-images.jianshu.io/upload_images/2442470-9431f2ae2be6971b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\" data-original-src=\"http://upload-images.jianshu.io/upload_images/2442470-9431f2ae2be6971b.jpg?imageMogr2/auto-orient/strip\" data-image-slug=\"9431f2ae2be6971b\" data-width=\"500\" data-height=\"500\" class=\"imagebubble-image\" style=\"max-width: 100%; height: auto; vertical-align: middle; border: 0px; cursor: -webkit-zoom-in; transition: all 0.25s ease-in-out;\"/><br/></p><p>抠图大法好</p><p style=\"margin-top: 0px; margin-bottom: 25px; text-align: justify; word-break: break-word;\"><br/></p><p style=\"margin-top: 0px; margin-bottom: 25px; text-align: justify; word-break: break-word;\">夏雨落尽终要去，秋风送爽始自开。都说酷暑天难耐，谁知薄凉夜易醒。长假虽长长有日，说走就走拦不住。工作便常常相伴，要来即来迎得欢。随手写着打油诗，慨叹十一要过完，不舍不愿不想走，开学上班得报道。君问到底有何招，阿随摊手也无奈。不如休假，不如跳舞，不如写文章，不如玩耍一把PS，试问今朝聊点啥，且看阿拉蕾问了个“抠图有啥绝招”。</p><p><img src=\"http://upload-images.jianshu.io/upload_images/2442470-bc349dc8f48b956d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\" data-original-src=\"http://upload-images.jianshu.io/upload_images/2442470-bc349dc8f48b956d.png?imageMogr2/auto-orient/strip\" data-image-slug=\"bc349dc8f48b956d\" data-width=\"640\" data-height=\"1136\" class=\"imagebubble-image\" style=\"max-width: 100%; height: auto; vertical-align: middle; border: 0px; cursor: -webkit-zoom-in; transition: all 0.25s ease-in-out;\"/><br/></p><p>要不要收贝吉塔的钱呢，嘤嘤哒</p><p style=\"margin-top: 0px; margin-bottom: 25px; text-align: justify; word-break: break-word;\"><br/></p><p style=\"margin-top: 0px; margin-bottom: 25px; text-align: justify; word-break: break-word;\">是的，抠图或者叫去背，或者只是说选用素材图中的一部分，是设计工作常常要遇到的情况，Adobe大法好，常言道“一个效果，多种方法”也是PS中经久不衰的“条条大道通罗马”的典范。不谈高深的，单是PS原生的这十种“绝招”，就足够对付绝大部分的抠图工作了。套用一句网络用语，那就是“今年过节不收礼，收礼只收……”，oh，不对，说串片场了，应该是下面这一句才对，“休息，休息一下，马上回来”……好吧，这位上了阿随君神的演员指定是忘词了，我们还是言归正传，聊一聊“抠图那些事”吧。<br/></p><p style=\"margin-top: 0px; margin-bottom: 25px; text-align: justify; word-break: break-word;\"><br/></p><p><img src=\"http://upload-images.jianshu.io/upload_images/2442470-2b07a6e07c15f378.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\" data-original-src=\"http://upload-images.jianshu.io/upload_images/2442470-2b07a6e07c15f378.jpg?imageMogr2/auto-orient/strip\" data-image-slug=\"2b07a6e07c15f378\" data-width=\"900\" data-height=\"500\" class=\"imagebubble-image\" style=\"max-width: 100%; height: auto; vertical-align: middle; border: 0px; cursor: -webkit-zoom-in; transition: all 0.25s ease-in-out;\"/><br/></p><p>本文参考自日站PSvip</p><p style=\"margin-top: 0px; margin-bottom: 25px; text-align: justify; word-break: break-word;\"><br/></p><h1 style=\"margin: 0px; font-family: inherit; line-height: 1.8; color: inherit; text-rendering: optimizeLegibility; font-size: 26px;\">前方高能教程</h1><p style=\"margin-top: 0px; margin-bottom: 25px; text-align: justify; word-break: break-word;\"><br/></p><blockquote style=\"padding: 10px 15px; margin: 0px 0px 20px; border-left: 4px solid rgb(153, 153, 153); background-color: whitesmoke; word-break: break-word; font-size: 15px; line-height: 30px;\"><p style=\"margin-top: 0px; margin-bottom: 0px; line-height: 1.7; text-align: justify; word-break: break-word;\"><strong>1、橡皮擦工具</strong><br/></p></blockquote><p style=\"margin-top: 0px; margin-bottom: 25px; text-align: justify; word-break: break-word;\">橡皮擦工具，更多时候跟“抠图”看似没啥关系，然而，竟然它能起到“擦除”的作用，那么就完全可以用来抠图去背了，它的键盘快捷键是：单按一个字母键“e”，简单粗暴地擦掉你不想要的背景或其他画面部分就可以了。</p><p><img src=\"http://upload-images.jianshu.io/upload_images/2442470-6408c128559fc7d6.gif?imageMogr2/auto-orient/strip\" data-original-src=\"http://upload-images.jianshu.io/upload_images/2442470-6408c128559fc7d6.gif?imageMogr2/auto-orient/strip\" data-image-slug=\"6408c128559fc7d6\" data-width=\"656\" data-height=\"448\" class=\"imagebubble-image\" style=\"max-width: 100%; height: auto; vertical-align: middle; border: 0px; cursor: -webkit-zoom-in; transition: all 0.25s ease-in-out;\"/><br/></p><p>不要哪儿，就擦哪，擦擦擦</p><p style=\"margin-top: 0px; margin-bottom: 25px; text-align: justify; word-break: break-word;\">橡皮擦工具用起来方便，选择了它，调节画笔大小和硬度即可开始擦擦擦。然而，缺点也比较明显，很难做到精细化抠图，对边缘的处理也不是太好，而且擦掉就真的没了，原图被破坏。阿随君这里并不推荐使用，只做了解，它结合“图层蒙版”来用的话，效果还是不错的，往后看会细讲的。<br/></p><p style=\"margin-top: 0px; margin-bottom: 25px; text-align: justify; word-break: break-word;\"><br/></p><blockquote style=\"padding: 10px 15px; margin: 0px 0px 20px; border-left: 4px solid rgb(153, 153, 153); background-color: whitesmoke; word-break: break-word; font-size: 15px; line-height: 30px;\"><p style=\"margin-top: 0px; margin-bottom: 0px; line-height: 1.7; text-align: justify; word-break: break-word;\"><strong>2、魔棒工具</strong><br/></p></blockquote><p style=\"margin-top: 0px; margin-bottom: 25px; text-align: justify; word-break: break-word;\">在有明显的对比的图片中，比如背景是典型的纯色的时，“魔法棒”工具就非常好用了，一点即可选中背景，删除即可。魔法棒工具和快速选择工具是一组工具，快捷键为W，也可以通过鼠标直接选择，如下图所示。当然，在选择的时候，魔棒工具，支持删除多选部分，也支持增加少选部分，方法都是点、点、点。</p><p><img src=\"http://upload-images.jianshu.io/upload_images/2442470-dd3eb984af503a41.gif?imageMogr2/auto-orient/strip\" data-original-src=\"http://upload-images.jianshu.io/upload_images/2442470-dd3eb984af503a41.gif?imageMogr2/auto-orient/strip\" data-image-slug=\"dd3eb984af503a41\" data-width=\"656\" data-height=\"412\" class=\"imagebubble-image\" style=\"max-width: 100%; height: auto; vertical-align: middle; border: 0px; cursor: -webkit-zoom-in; transition: all 0.25s ease-in-out;\"/><br/></p><p>选用魔棒工具，一键去除蓝天背景，so easy</p><p style=\"margin-top: 0px; margin-bottom: 25px; text-align: justify; word-break: break-word;\"><br/></p><blockquote style=\"padding: 10px 15px; margin: 0px 0px 20px; border-left: 4px solid rgb(153, 153, 153); background-color: whitesmoke; word-break: break-word; font-size: 15px; line-height: 30px;\"><p style=\"margin-top: 0px; margin-bottom: 0px; line-height: 1.7; text-align: justify; word-break: break-word;\"><strong>3、快速选择工具</strong><br/></p></blockquote><p style=\"margin-top: 0px; margin-bottom: 25px; text-align: justify; word-break: break-word;\">“快速选择工具”，顾名思义，就是“快速”地选择画面中你想要或者你不想要的部分，通过工具栏用鼠标直接选中该工具，或者用快捷键“W”，对准画面框选即可，同时，可以配合中括号“[”或“]”来缩放画笔大小，更精确的框选，如下图所示：</p><p><img src=\"http://upload-images.jianshu.io/upload_images/2442470-c5e86159ad967f0f.gif?imageMogr2/auto-orient/strip\" data-original-src=\"http://upload-images.jianshu.io/upload_images/2442470-c5e86159ad967f0f.gif?imageMogr2/auto-orient/strip\" data-image-slug=\"c5e86159ad967f0f\" data-width=\"660\" data-height=\"397\" class=\"imagebubble-image\" style=\"max-width: 100%; height: auto; vertical-align: middle; border: 0px; cursor: -webkit-zoom-in; transition: all 0.25s ease-in-out;\"/><br/></p><p>快速选择工具，即用画笔画选区</p><p style=\"margin-top: 0px; margin-bottom: 25px; text-align: justify; word-break: break-word;\"><br/></p><p style=\"margin-top: 0px; margin-bottom: 25px; text-align: justify; word-break: break-word;\">如果初步框选的范围超过了想要的画面范围的话，可以按住Alt键的同时，框选超出的部分，即可从选区减去它们，如下图所示：</p><p><img src=\"http://upload-images.jianshu.io/upload_images/2442470-aa1ab26c89094251.gif?imageMogr2/auto-orient/strip\" data-original-src=\"http://upload-images.jianshu.io/upload_images/2442470-aa1ab26c89094251.gif?imageMogr2/auto-orient/strip\" data-image-slug=\"aa1ab26c89094251\" data-width=\"562\" data-height=\"353\" class=\"imagebubble-image\" style=\"max-width: 100%; height: auto; vertical-align: middle; border: 0px; cursor: -webkit-zoom-in; transition: all 0.25s ease-in-out;\"/><br/></p><p>+Alt键，则是从选区中减去</p><p style=\"margin-top: 0px; margin-bottom: 25px; text-align: justify; word-break: break-word;\"><br/></p><p style=\"margin-top: 0px; margin-bottom: 25px; text-align: justify; word-break: break-word;\">而如果初步框选后还有没被选中的部分，则可以按住啊Shift键的同时，框选要添加的部分，即可将它们添加到选区中，如下图所示操作：</p><p><img src=\"http://upload-images.jianshu.io/upload_images/2442470-c9310bc1b7fdd146.gif?imageMogr2/auto-orient/strip\" data-original-src=\"http://upload-images.jianshu.io/upload_images/2442470-c9310bc1b7fdd146.gif?imageMogr2/auto-orient/strip\" data-image-slug=\"c9310bc1b7fdd146\" data-width=\"634\" data-height=\"408\" class=\"imagebubble-image\" style=\"max-width: 100%; height: auto; vertical-align: middle; border: 0px; cursor: -webkit-zoom-in; transition: all 0.25s ease-in-out;\"/><br/></p><p>+Shift键，则是添加到选区</p><p style=\"margin-top: 0px; margin-bottom: 25px; text-align: justify; word-break: break-word;\"><br/></p><blockquote style=\"padding: 10px 15px; margin: 0px 0px 20px; border-left: 4px solid rgb(153, 153, 153); background-color: whitesmoke; word-break: break-word; font-size: 15px; line-height: 30px;\"><p style=\"margin-top: 0px; margin-bottom: 0px; line-height: 1.7; text-align: justify; word-break: break-word;\"><strong>4、多边形套索工具</strong><br/></p></blockquote><p style=\"margin-top: 0px; margin-bottom: 25px; text-align: justify; word-break: break-word;\">顾名思义，“多边形套索工具”是针对画面中以直线构成的几何多边形使用的利器，它在工具栏的套索工具组中，选中后，沿着画面中的多边形边缘“框选”即可，而在按住Shift键的同时，则可以拉出45°或是90°的规则直线，方便选择正方形或三角形等有规则的多边形，如下图所示操作：</p><p><img src=\"http://upload-images.jianshu.io/upload_images/2442470-52850d4590974712.gif?imageMogr2/auto-orient/strip\" data-original-src=\"http://upload-images.jianshu.io/upload_images/2442470-52850d4590974712.gif?imageMogr2/auto-orient/strip\" data-image-slug=\"52850d4590974712\" data-width=\"619\" data-height=\"411\" class=\"imagebubble-image\" style=\"max-width: 100%; height: auto; vertical-align: middle; border: 0px; cursor: -webkit-zoom-in; transition: all 0.25s ease-in-out;\"/><br/></p><p>抠选这种形状，正式多边形套索工具的拿手好戏</p><p style=\"margin-top: 0px; margin-bottom: 25px; text-align: justify; word-break: break-word;\">PS：<strong>非直线轮廓的选区时，可以尝试使用“磁性套索工具”</strong>，PS会让它自发贴合轮廓做选区，前提是轮廓跟背景要有强对比。<br/></p><p style=\"margin-top: 0px; margin-bottom: 25px; text-align: justify; word-break: break-word;\"><br/></p><blockquote style=\"padding: 10px 15px; margin: 0px 0px 20px; border-left: 4px solid rgb(153, 153, 153); background-color: whitesmoke; word-break: break-word; font-size: 15px; line-height: 30px;\"><p style=\"margin-top: 0px; margin-bottom: 0px; line-height: 1.7; text-align: justify; word-break: break-word;\"><strong>5、钢笔工具</strong><br/></p></blockquote><p style=\"margin-top: 0px; margin-bottom: 25px; text-align: justify; word-break: break-word;\">相较于只能画直线做选区的“多边形套索工具”来说，“钢笔工具”则是无敌的，直线和平滑曲线都是它的看家本领，对准轮廓绘制路径。严格来说，用它来做选区，精细度是足够高的，但是之所以给出了三星评级，主要是在“好用指数”上拉了分，钢笔的入门与熟练需要大量的练习来掌握，操作难度上要高于其他工具。推荐一个练习网站，在游戏中提高钢笔熟练度：<a target=\"_blank\" style=\"color: rgb(64, 148, 199);\">http://bezier.method.ac/</a></p><p><img src=\"http://upload-images.jianshu.io/upload_images/2442470-6fbc9e9c9cd527a3.gif?imageMogr2/auto-orient/strip\" data-original-src=\"http://upload-images.jianshu.io/upload_images/2442470-6fbc9e9c9cd527a3.gif?imageMogr2/auto-orient/strip\" data-image-slug=\"6fbc9e9c9cd527a3\" data-width=\"634\" data-height=\"408\" class=\"imagebubble-image\" style=\"max-width: 100%; height: auto; vertical-align: middle; border: 0px; cursor: -webkit-zoom-in; transition: all 0.25s ease-in-out;\"/><br/></p><p>绘制平滑曲线路径做选区，钢笔工具最擅长</p><p style=\"margin-top: 0px; margin-bottom: 25px; text-align: justify; word-break: break-word;\"><br/></p><p style=\"margin-top: 0px; margin-bottom: 25px; text-align: justify; word-break: break-word;\">用“钢笔路径”绘制好路径后，只需来到“路径”面板，然后按需重命名一下路径，然后按住Ctrl的同时，单击路径图层，即可创作选区了，如下图操作所示：</p><p><img src=\"http://upload-images.jianshu.io/upload_images/2442470-d3a9a817a43769c2.gif?imageMogr2/auto-orient/strip\" data-original-src=\"http://upload-images.jianshu.io/upload_images/2442470-d3a9a817a43769c2.gif?imageMogr2/auto-orient/strip\" data-image-slug=\"d3a9a817a43769c2\" data-width=\"677\" data-height=\"478\" class=\"imagebubble-image\" style=\"max-width: 100%; height: auto; vertical-align: middle; border: 0px; cursor: -webkit-zoom-in; transition: all 0.25s ease-in-out;\"/><br/></p><p>Ctrl+点击路径，即可做出选区</p><p style=\"margin-top: 0px; margin-bottom: 25px; text-align: justify; word-break: break-word;\"><br/></p><blockquote style=\"padding: 10px 15px; margin: 0px 0px 20px; border-left: 4px solid rgb(153, 153, 153); background-color: whitesmoke; word-break: break-word; font-size: 15px; line-height: 30px;\"><p style=\"margin-top: 0px; margin-bottom: 0px; line-height: 1.7; text-align: justify; word-break: break-word;\"><strong>6、通道大法好</strong><br/></p></blockquote><p style=\"margin-top: 0px; margin-bottom: 25px; text-align: justify; word-break: break-word;\">利用通道做选区抠图去背，是处理头发、树木、花朵、透明半透明等这类难于处理的素材的不二之选，简单方便易上手。第一步，是来到通道面板，观察红、绿、蓝三个通道，选择一个黑白对比度最强烈的通道，并复制该通道。PS：如果是要保留透明信息，则要选择灰度信息最好的一个通道来复制了。如下图抠选茂密头发的女模特操作为例：</p><p><img src=\"http://upload-images.jianshu.io/upload_images/2442470-fa0bdae766f46cf6.gif?imageMogr2/auto-orient/strip\" data-original-src=\"http://upload-images.jianshu.io/upload_images/2442470-fa0bdae766f46cf6.gif?imageMogr2/auto-orient/strip\" data-image-slug=\"fa0bdae766f46cf6\" data-width=\"730\" data-height=\"521\" class=\"imagebubble-image\" style=\"max-width: 100%; height: auto; vertical-align: middle; border: 0px; cursor: -webkit-zoom-in; transition: all 0.25s ease-in-out;\"/><br/></p><p>复制黑白对比最强烈的通道</p><p style=\"margin-top: 0px; margin-bottom: 25px; text-align: justify; word-break: break-word;\"><br/></p><p style=\"margin-top: 0px; margin-bottom: 25px; text-align: justify; word-break: break-word;\">在选中复制好的通道后，选择菜单栏的“图像&gt;调整&gt;色阶”或者按快捷键“Ctrl+L”，调出色阶面板，加到该通道的黑白对比度，让对比更加的突出，如下图所示操作：</p><p><br/></p>','1') [ RunTime:0.0210s ]
+INFO: [ hy_log ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000000s ]
+INFO: [ hy_log ] --END-- [ RunTime:-0.661038s ]
+
+[ 2016-10-09T21:51:50+08:00 ] ::1 /Marxism/Marxism/index.php/Article/Detail/ajax?q=list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP\wamp64\www\Marxism\Marxism\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.010000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.010000s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `mar_detail` [ RunTime:0.0270s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined variable: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 31 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000000s ]
+INFO: [ hy_log ] --END-- [ RunTime:0.001000s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined index: style F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 23 行.
+NOTIC: [8] Undefined index: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 25 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001000s ]
+INFO: [ hy_log ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: limit F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 161 行.
+NOTIC: [8] Undefined index: order F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 163 行.
+NOTIC: [8] Undefined index: field F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: where F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: decrypt F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 242 行.
+SQL: SHOW COLUMNS FROM `mar_detail` [ RunTime:0.0030s ]
+SQL: SELECT 1 FROM `mar_detail` `hy` LEFT JOIN `mar_category` AS `category` ON hy.category_id = category.id  WHERE hy.status = 1  [ RunTime:0.0040s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined index: style F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 23 行.
+NOTIC: [8] Undefined index: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 25 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000000s ]
+INFO: [ hy_log ] --END-- [ RunTime:-0.015001s ]
+NOTIC: [8] Undefined index: hy F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 141 行.
+NOTIC: [8] Undefined index: associate F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 142 行.
+SQL: SHOW COLUMNS FROM `mar_detail` [ RunTime:0.0090s ]
+SQL: SELECT hy.id,hy.category_id,hy.title,hy.content,hy.create_time,hy.update_time,hy.status,category.name AS `category_name` FROM `mar_detail` `hy` LEFT JOIN `mar_category` AS `category` ON hy.category_id = category.id  WHERE hy.status = 1 ORDER BY hy.id desc LIMIT 0,10   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: hidden F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 595 行.
+NOTIC: [8] Undefined index: hidden F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 595 行.
+NOTIC: [8] Undefined index: title F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 595 行.
+NOTIC: [8] Undefined index: title F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 595 行.
+NOTIC: [8] Undefined index: hidden F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 595 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: list F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 605 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: list F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 605 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: list F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 605 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: list F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 605 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: info F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 470 行.
+INFO: [ hy_log ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001001s ]
+INFO: [ hy_log ] --END-- [ RunTime:-0.046002s ]
+
+[ 2016-10-09T21:51:54+08:00 ] ::1 /Marxism/Marxism/index.php/Article/Detail/all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP\wamp64\www\Marxism\Marxism\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.007001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.007001s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `mar_detail` [ RunTime:0.0890s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined variable: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 31 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001000s ]
+INFO: [ hy_log ] --END-- [ RunTime:0.001000s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined index: style F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 23 行.
+NOTIC: [8] Undefined index: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 25 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001000s ]
+INFO: [ hy_log ] --END-- [ RunTime:-0.001000s ]
+NOTIC: [8] Undefined index: all F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 922 行.
+NOTIC: [8] Undefined index: type F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 428 行.
+SQL: SHOW COLUMNS FROM `mar_category` [ RunTime:0.0160s ]
+SQL: SELECT `id`,`pid`,`name` FROM `mar_category` WHERE `id` > 11  [ RunTime:0.0230s ]
+NOTIC: [8] Undefined index: title F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 425 行.
+NOTIC: [8] Undefined index: title F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 426 行.
+NOTIC: [8] Undefined index: search F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 428 行.
+NOTIC: [8] Undefined index: title F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 425 行.
+NOTIC: [8] Undefined index: list F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 425 行.
+NOTIC: [8] Undefined index: title F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 426 行.
+NOTIC: [8] Undefined index: search F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 428 行.
+NOTIC: [8] Undefined index: search F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 428 行.
+INFO: [ before_view ] --START--
+SQL: SHOW COLUMNS FROM `mar_frame_alert` [ RunTime:0.0700s ]
+SQL: SELECT `id`,`category`,`icon`,`message`,`url`,`type`,`create_time` FROM `mar_frame_alert` where `to_users` LIKE '%,38,%' AND ( IFNULL(`read_users`,'')='' OR `read_users` NOT LIKE '%,38,%') AND `status`=1 ORDER BY `id` DESC [ RunTime:0.0150s ]
+INFO: Run Common\Behavior\HyBeforeViewBehavior [ RunTime:0.099005s ]
+INFO: [ before_view ] --END-- [ RunTime:0.099005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: GLOBAL F:\PHP\wamp64\www\Marxism\Marxism\Runtime\Cache\Article\9c07dc003a2105c82c74ba68c02f614c.php 第 38 行.
+NOTIC: [8] Undefined variable: _middle F:\PHP\wamp64\www\Marxism\Marxism\Runtime\Cache\Article\9c07dc003a2105c82c74ba68c02f614c.php 第 204 行.
+NOTIC: [8] Undefined variable: _bottom F:\PHP\wamp64\www\Marxism\Marxism\Runtime\Cache\Article\9c07dc003a2105c82c74ba68c02f614c.php 第 223 行.
+NOTIC: [8] Undefined variable: _script F:\PHP\wamp64\www\Marxism\Marxism\Runtime\Cache\Article\9c07dc003a2105c82c74ba68c02f614c.php 第 282 行.
+NOTIC: [8] Undefined index: GLOBAL F:\PHP\wamp64\www\Marxism\Marxism\Runtime\Cache\Article\9c07dc003a2105c82c74ba68c02f614c.php 第 290 行.
+NOTIC: [8] Undefined variable: hyMenu F:\PHP\wamp64\www\Marxism\Marxism\Runtime\Cache\Article\9c07dc003a2105c82c74ba68c02f614c.php 第 295 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.114006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.115007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005001s ]
+
+[ 2016-10-09T21:51:57+08:00 ] ::1 /Marxism/Marxism/index.php/Article/Detail/ajax?q=list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP\wamp64\www\Marxism\Marxism\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.004000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `mar_detail` [ RunTime:0.0330s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined variable: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 31 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000000s ]
+INFO: [ hy_log ] --END-- [ RunTime:0.001000s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined index: style F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 23 行.
+NOTIC: [8] Undefined index: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 25 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001000s ]
+INFO: [ hy_log ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: limit F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 161 行.
+NOTIC: [8] Undefined index: order F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 163 行.
+NOTIC: [8] Undefined index: field F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: where F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: decrypt F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 242 行.
+SQL: SHOW COLUMNS FROM `mar_detail` [ RunTime:0.0020s ]
+SQL: SELECT 1 FROM `mar_detail` `hy` LEFT JOIN `mar_category` AS `category` ON hy.category_id = category.id  WHERE hy.status = 1  [ RunTime:0.0650s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined index: style F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 23 行.
+NOTIC: [8] Undefined index: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 25 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000000s ]
+INFO: [ hy_log ] --END-- [ RunTime:-0.075005s ]
+NOTIC: [8] Undefined index: hy F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 141 行.
+NOTIC: [8] Undefined index: associate F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 142 行.
+SQL: SHOW COLUMNS FROM `mar_detail` [ RunTime:0.0140s ]
+SQL: SELECT hy.id,hy.category_id,hy.title,hy.content,hy.create_time,hy.update_time,hy.status,category.name AS `category_name` FROM `mar_detail` `hy` LEFT JOIN `mar_category` AS `category` ON hy.category_id = category.id  WHERE hy.status = 1 ORDER BY hy.id desc LIMIT 10   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: hidden F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 595 行.
+NOTIC: [8] Undefined index: hidden F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 595 行.
+NOTIC: [8] Undefined index: title F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 595 行.
+NOTIC: [8] Undefined index: title F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 595 行.
+NOTIC: [8] Undefined index: hidden F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 595 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: list F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 605 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: list F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 605 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: list F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 605 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: list F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 605 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: info F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 470 行.
+INFO: [ hy_log ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000000s ]
+INFO: [ hy_log ] --END-- [ RunTime:-0.113007s ]
+
+[ 2016-10-09T21:51:59+08:00 ] ::1 /Marxism/Marxism/index.php/Article/Detail/ajax?q=detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP\wamp64\www\Marxism\Marxism\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.004000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `mar_detail` [ RunTime:0.0860s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined variable: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 31 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000000s ]
+INFO: [ hy_log ] --END-- [ RunTime:0.001001s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined index: style F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 23 行.
+NOTIC: [8] Undefined index: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 25 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000000s ]
+INFO: [ hy_log ] --END-- [ RunTime:0.000000s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined index: style F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 23 行.
+NOTIC: [8] Undefined index: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 25 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001000s ]
+INFO: [ hy_log ] --END-- [ RunTime:-0.002000s ]
+NOTIC: [2] Missing argument 1 for Common\Model\HyFrameModel::find(), called in F:\PHP\wamp64\www\Marxism\Marxism\Application\Article\Model\DetailModel.class.php on line 242 and defined F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 272 行.
+NOTIC: [8] Undefined variable: options F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 273 行.
+NOTIC: [8] Undefined variable: options F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 274 行.
+NOTIC: [8] Undefined index: hy F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 141 行.
+NOTIC: [8] Undefined index: order F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 163 行.
+NOTIC: [8] Undefined index: field F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: decrypt F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 242 行.
+NOTIC: [8] Undefined index: scope F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 248 行.
+NOTIC: [8] Undefined index: count F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 249 行.
+SQL: SHOW COLUMNS FROM `mar_detail` [ RunTime:0.0020s ]
+SQL: SELECT hy.id,hy.category_id,hy.title,hy.content,hy.create_time,hy.update_time,hy.status,category.name AS `category_name` FROM `mar_detail` `hy` LEFT JOIN `mar_category` AS `category` ON hy.category_id = category.id  WHERE hy.id = '4' LIMIT 1   [ RunTime:0.0150s ]
+NOTIC: [8] Undefined variable: tpl F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Controller\HyAllController.class.php 第 90 行.
+INFO: [ before_view ] --START--
+SQL: SHOW COLUMNS FROM `mar_frame_alert` [ RunTime:0.0580s ]
+SQL: SELECT `id`,`category`,`icon`,`message`,`url`,`type`,`create_time` FROM `mar_frame_alert` where `to_users` LIKE '%,38,%' AND ( IFNULL(`read_users`,'')='' OR `read_users` NOT LIKE '%,38,%') AND `status`=1 ORDER BY `id` DESC [ RunTime:0.0010s ]
+INFO: Run Common\Behavior\HyBeforeViewBehavior [ RunTime:0.071004s ]
+INFO: [ before_view ] --END-- [ RunTime:0.072004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: json F:\PHP\wamp64\www\Marxism\Marxism\Runtime\Cache\Article\c6d80dac29f4bb3371a39f454a43cf44.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2016-10-09T21:52:30+08:00 ] ::1 /Marxism/Marxism/index.php/Article/Detail/all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP\wamp64\www\Marxism\Marxism\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.005000s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `mar_detail` [ RunTime:0.0670s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined variable: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 31 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001000s ]
+INFO: [ hy_log ] --END-- [ RunTime:0.001000s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined index: style F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 23 行.
+NOTIC: [8] Undefined index: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 25 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001000s ]
+INFO: [ hy_log ] --END-- [ RunTime:-0.001000s ]
+NOTIC: [8] Undefined index: all F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 922 行.
+NOTIC: [8] Undefined index: type F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 428 行.
+SQL: SHOW COLUMNS FROM `mar_category` [ RunTime:0.0440s ]
+SQL: SELECT `id`,`pid`,`name` FROM `mar_category` WHERE `id` > 11  [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: title F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 425 行.
+NOTIC: [8] Undefined index: title F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 426 行.
+NOTIC: [8] Undefined index: search F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 428 行.
+NOTIC: [8] Undefined index: title F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 425 行.
+NOTIC: [8] Undefined index: list F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 425 行.
+NOTIC: [8] Undefined index: title F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 426 行.
+NOTIC: [8] Undefined index: search F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 428 行.
+NOTIC: [8] Undefined index: search F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 428 行.
+INFO: [ before_view ] --START--
+SQL: SHOW COLUMNS FROM `mar_frame_alert` [ RunTime:0.0300s ]
+SQL: SELECT `id`,`category`,`icon`,`message`,`url`,`type`,`create_time` FROM `mar_frame_alert` where `to_users` LIKE '%,38,%' AND ( IFNULL(`read_users`,'')='' OR `read_users` NOT LIKE '%,38,%') AND `status`=1 ORDER BY `id` DESC [ RunTime:0.0020s ]
+INFO: Run Common\Behavior\HyBeforeViewBehavior [ RunTime:0.045002s ]
+INFO: [ before_view ] --END-- [ RunTime:0.045002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: GLOBAL F:\PHP\wamp64\www\Marxism\Marxism\Runtime\Cache\Article\9c07dc003a2105c82c74ba68c02f614c.php 第 38 行.
+NOTIC: [8] Undefined variable: _middle F:\PHP\wamp64\www\Marxism\Marxism\Runtime\Cache\Article\9c07dc003a2105c82c74ba68c02f614c.php 第 204 行.
+NOTIC: [8] Undefined variable: _bottom F:\PHP\wamp64\www\Marxism\Marxism\Runtime\Cache\Article\9c07dc003a2105c82c74ba68c02f614c.php 第 223 行.
+NOTIC: [8] Undefined variable: _script F:\PHP\wamp64\www\Marxism\Marxism\Runtime\Cache\Article\9c07dc003a2105c82c74ba68c02f614c.php 第 282 行.
+NOTIC: [8] Undefined index: GLOBAL F:\PHP\wamp64\www\Marxism\Marxism\Runtime\Cache\Article\9c07dc003a2105c82c74ba68c02f614c.php 第 290 行.
+NOTIC: [8] Undefined variable: hyMenu F:\PHP\wamp64\www\Marxism\Marxism\Runtime\Cache\Article\9c07dc003a2105c82c74ba68c02f614c.php 第 295 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.118007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.119007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006001s ]
+
+[ 2016-10-09T21:52:34+08:00 ] ::1 /Marxism/Marxism/index.php/Article/Detail/ajax?q=list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP\wamp64\www\Marxism\Marxism\HomyitCore\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.007001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.007001s ]
+NOTIC: [2048] Declaration of Common\Model\HyFrameModel::find() should be compatible with Think\Model::find($options = Array) F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 13 行.
+NOTIC: [8] Undefined index: model F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Controller\HyFrameController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `mar_detail` [ RunTime:0.3500s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined variable: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 31 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.001001s ]
+INFO: [ hy_log ] --END-- [ RunTime:0.001001s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined index: style F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 23 行.
+NOTIC: [8] Undefined index: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 25 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000000s ]
+INFO: [ hy_log ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: limit F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 161 行.
+NOTIC: [8] Undefined index: order F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 163 行.
+NOTIC: [8] Undefined index: field F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 171 行.
+NOTIC: [8] Undefined index: where F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: decrypt F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 242 行.
+SQL: SHOW COLUMNS FROM `mar_detail` [ RunTime:0.0020s ]
+SQL: SELECT 1 FROM `mar_detail` `hy` LEFT JOIN `mar_category` AS `category` ON hy.category_id = category.id  WHERE hy.status = 1  [ RunTime:0.2210s ]
+INFO: [ hy_log ] --START--
+NOTIC: [8] Undefined index: style F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 23 行.
+NOTIC: [8] Undefined index: sql F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Behavior\HyLogBehavior.class.php 第 25 行.
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000000s ]
+INFO: [ hy_log ] --END-- [ RunTime:-0.229013s ]
+NOTIC: [8] Undefined index: hy F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 141 行.
+NOTIC: [8] Undefined index: associate F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyFrameModel.class.php 第 142 行.
+SQL: SHOW COLUMNS FROM `mar_detail` [ RunTime:0.0020s ]
+SQL: SELECT hy.id,hy.category_id,hy.title,hy.content,hy.create_time,hy.update_time,hy.status,category.name AS `category_name` FROM `mar_detail` `hy` LEFT JOIN `mar_category` AS `category` ON hy.category_id = category.id  WHERE hy.status = 1 ORDER BY hy.id desc LIMIT 10   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: hidden F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 595 行.
+NOTIC: [8] Undefined index: hidden F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 595 行.
+NOTIC: [8] Undefined index: title F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 595 行.
+NOTIC: [8] Undefined index: title F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 595 行.
+NOTIC: [8] Undefined index: hidden F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 595 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: list F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 605 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: list F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 605 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: list F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 605 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: list F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 605 行.
+NOTIC: [8] Undefined index: {callback} F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 806 行.
+NOTIC: [8] Undefined index: info F:\PHP\wamp64\www\Marxism\Marxism\Application\Common\Model\HyAllModel.class.php 第 470 行.
+INFO: [ hy_log ] --START--
+INFO: Run Common\Behavior\HyLogBehavior [ RunTime:0.000000s ]
+INFO: [ hy_log ] --END-- [ RunTime:-0.257014s ]
+

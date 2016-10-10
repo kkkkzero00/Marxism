@@ -186,20 +186,21 @@ class AchieverModel extends HyAllModel {
 		dump($arr['savepath'].$arr['savename']);*/
 		return array(
 			'table'=>array(
+				'photo_id'=>array(
+					'title'=>'照片',
+					'icon'=> 'fa-list-alt',
+					'style'=>'green',
+					'cols'=>'0,12',
+					'value'=>array(
+						''=>$arr['id']?("<img width='400' height='300' src='".__ROOT__."/Public/uploads/".$arr['savepath'].$arr['savename']."'>") : '无'
+					)
+				),
 				'name'=>array(
 					'title'=>'姓名',
 					'icon'=>'fa-list-alt',
 					'style'=>'blue',
 					'value'=>array(
 						''=>$arr['name']?('<pre>'.$arr['name'].'</pre>') : '无'
-					)
-				),
-				'awards'=>array(
-					'title'=>'获得荣誉',
-					'icon'=> 'fa-list-alt',
-					'style'=>'red',
-					'value'=>array(
-						''=>$arr['awards']?('<pre>'.$arr['awards'].'</pre>') : '无'
 					)
 				),
 				'message'=>array(
@@ -211,15 +212,16 @@ class AchieverModel extends HyAllModel {
 						''=>$arr['message']?("<p style='text-indent:30px'>".$arr['message']."</p>") : '无'
 					)
 				),
-				'photo_id'=>array(
-					'title'=>'照片',
+				'awards'=>array(
+					'title'=>'获得荣誉',
 					'icon'=> 'fa-list-alt',
-					'style'=>'green',
-					'cols'=>'0,12',
+					'style'=>'red',
 					'value'=>array(
-						''=>$arr['id']?("<img width='400' height='300' src='".__ROOT__."/Public/uploads/".$arr['savepath'].$arr['savename']."'>") : '无'
+						''=>$arr['awards']?('<pre>'.$arr['awards'].'</pre>') : '无'
 					)
-				)
+				),
+				
+				
 			)
 			
 		
