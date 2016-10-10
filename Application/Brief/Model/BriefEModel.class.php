@@ -121,6 +121,13 @@ class BriefEModel extends HyAllModel {
                             )
                     )
             ),
+            'category_id'=>array(
+                    'form'=>array(
+                        'fill'=>array(
+                            'both'=>array('value',8)
+                        )
+                    )
+            )
 				
 		);		
 	}

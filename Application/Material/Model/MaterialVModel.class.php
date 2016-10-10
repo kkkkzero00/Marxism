@@ -129,6 +129,13 @@ class MaterialVModel extends HyAllModel {
 						'type'=>'select'
 					)
 				),
+				'category_id'=>array(
+	            	'form'=>array(
+	            		'fill'=>array(
+							'both'=>array('value',11)
+						)
+	            	)
+	            )
 				
 				
 				

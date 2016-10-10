@@ -150,6 +150,13 @@ class MaterialAModel extends HyAllModel {
 						'type'=>'select'
 					)
 				),
+				'category_id'=>array(
+	            	'form'=>array(
+	            		'fill'=>array(
+							'both'=>array('value',10)
+						)
+	            	)
+	            )
 				
 				
 				
@@ -179,19 +186,6 @@ class MaterialAModel extends HyAllModel {
 			)
 		);
 	}
-	/**
-	 * 图表汇总
-	 * @return json
-	 */
-	/*protected function detail_chart(){
-		$grades=$this->associate(array('student|id|class_id'))
-			->where(array('student.status'=>1,'status'=>1,'college_id'=>ss_clgid()))
-			->field(array('grade'=>'name','count(grade)'=>'value'))->group('grade')->order('grade asc')->select();
-		$classes=$this->associate(array('student|id|class_id'))
-			->where(array('student.status'=>1,'status'=>1,'college_id'=>ss_clgid()))
-			->field(array('name','count(hy.id)'=>'value'))->group('hy.id')->order('grade asc')->select();
-		return array('json'=>json_encode(array('grades'=>$grades,'classes'=>$classes)));
-	}*/
 
 	protected function callback_cutLength($content){
 
